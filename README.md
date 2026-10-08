@@ -22,8 +22,8 @@
 
   <!-- Botones de Acción Rápida -->
   <p align="center">
-    <a href="mailto:danieleliasvasquezbarrios31@gmail.com">
-      <img src="https://img.shields.io/badge/Email-danieleliasvasquezbarrios31@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <a href="mailto:danvb.dev@gmail.com">
+      <img src="https://img.shields.io/badge/Email-danvb.dev@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
     <a href="https://linkedin.com/in/Danvb15" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -95,11 +95,25 @@ racional_tecnologico:
 ```bash
 $ curl -s https://danvb.dev/contact.json
 {
-  "email": "danieleliasvasquezbarrios31@gmail.com",
+  "email": "danvb.dev@gmail.com",
   "github": "https://github.com/Danvb15",
   "linkedin": "https://linkedin.com/in/Danvb15",
   "location": "Barranquilla, Atlántico (Colombia) 🇨🇴"
 }
+```
+</details>
+
+<details>
+  <summary><strong>▶ <code>danvb easter-egg --joke</code></strong> (Humor geek)</summary>
+  <br />
+
+```bash
+$ danvb run joke.sh
+- "¿Por qué a los programadores les gusta el modo oscuro?"
+- "Porque la luz atrae a los bugs. 🐛"
+
+$ danvb run laws.sh
+"Ley de Hofstadter: Todo toma más tiempo del que crees, incluso cuando tomas en cuenta la Ley de Hofstadter."
 ```
 </details>
 
@@ -148,7 +162,7 @@ $ curl -s https://danvb.dev/contact.json
       <p><em>Administración Remota & Custodia Criptográfica</em></p>
       <p>Software de escritorio multiplataforma de alto rendimiento para gestión centralizada de servidores SSH y RDP. Aísla credenciales en el <strong>OS Keyring nativo</strong> (0 contraseñas en texto plano).</p>
       <p>
-        <img src="https://skillicons.dev/icons?i=rust,tauri,react,sqlite&theme=dark" height="30" alt="Tech" />
+        <img src="https://skillicons.dev/icons?i=rust,tauri,react,sqlite&theme=dark" alt="Tech Stack" />
       </p>
       <p><strong>Claves:</strong> IPC tipado Rust-React · Destrucción de secretos en RAM tras login</p>
     </td>
@@ -157,7 +171,7 @@ $ curl -s https://danvb.dev/contact.json
       <p><em>Plataforma Multi-Tenant de Inventario & POS</em></p>
       <p>Arquitectura distribuida para retail tecnológico. Concurrencia optimista para evitar sobreventas, auditoría transaccional inmutable y clientes multiplataforma (Web y Mobile).</p>
       <p>
-        <img src="https://skillicons.dev/icons?i=java,spring,postgres,react&theme=dark" height="30" alt="Tech" />
+        <img src="https://skillicons.dev/icons?i=java,spring,postgres,react&theme=dark" alt="Tech Stack" />
       </p>
       <p><strong>Claves:</strong> Multi-tenant estricto · Optimistic Locking · Auditoría inmutable</p>
     </td>
@@ -168,7 +182,7 @@ $ curl -s https://danvb.dev/contact.json
       <p><em>Pipeline RAG & Memoria Semántica Vectorial</em></p>
       <p>Agente inteligente corporativo con backend asíncrono para asistencia en flujos de trabajo empresariales y análisis de documentos contextuales con prevención de alucinaciones.</p>
       <p>
-        <img src="https://skillicons.dev/icons?i=py,fastapi,postgres,redis&theme=dark" height="30" alt="Tech" />
+        <img src="https://skillicons.dev/icons?i=py,fastapi,postgres,redis&theme=dark" alt="Tech Stack" />
       </p>
       <p><strong>Claves:</strong> Búsqueda semántica vectorial (pgvector) · Caché Redis · Claude API</p>
     </td>
@@ -177,7 +191,7 @@ $ curl -s https://danvb.dev/contact.json
       <p><em>Virtualización, Contenedores & Redes Cifradas</em></p>
       <p>Infraestructura self-hosted sobre Proxmox VE con segmentación entre VMs y contenedores LXC, servicios orquestados en Docker y redes malladas seguras sin puertos expuestos.</p>
       <p>
-        <img src="https://skillicons.dev/icons?i=linux,docker,bash&theme=dark" height="30" alt="Tech" />
+        <img src="https://skillicons.dev/icons?i=linux,docker,bash&theme=dark" alt="Tech Stack" />
       </p>
       <p><strong>Claves:</strong> Aislamiento de entornos · Túneles WireGuard / Tailscale · Nginx SSL</p>
     </td>
@@ -186,42 +200,21 @@ $ curl -s https://danvb.dev/contact.json
 
 ---
 
-### 🏆 Vitrina de Trofeos // GitHub Achievements
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Danvb15&theme=tokyonight&no-frame=true&margin_w=4&margin_h=4" alt="GitHub Trophies" />
-</div>
-
----
-
-### 📈 Gráfica de Actividad & Ritmo de Desarrollo
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Danvb15&theme=tokyo-night&hide_border=true&area=true&color=60a5fa" alt="Activity Graph" width="95%" />
-</div>
-
-<br />
-
-<div align="center">
-  <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=Danvb15&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0D1117&title_color=60A5FA&text_color=9CA3AF&icon_color=38BDF8" height="165" alt="GitHub Stats" />
-    <img src="https://streak-stats.demolab.com/?user=Danvb15&theme=tokyonight&hide_border=true&border_radius=12&background=0D1117&ring=60A5FA&fire=38BDF8&currStreakLabel=60A5FA" height="165" alt="Streak Stats" />
-  </p>
-  <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Danvb15&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0D1117&title_color=60A5FA&text_color=9CA3AF" height="165" alt="Top Languages" />
-  </p>
-</div>
-
----
-
 ### 🐍 Snake Contribution Matrix // Comiendo Commits
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Danvb15/Danvb15/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Danvb15/Danvb15/output/github-contribution-grid-snake.svg" />
-    <img alt="Snake Contribution Animation" src="https://raw.githubusercontent.com/Danvb15/Danvb15/output/github-contribution-grid-snake-dark.svg" width="95%" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/Danvb15/Danvb15/output/github-contribution-grid-snake-dark.svg" alt="Snake Contribution Animation" width="100%" />
+</div>
+
+---
+
+### 📊 Métricas & Actividad en GitHub
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Danvb15&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0D1117&title_color=60A5FA&text_color=9CA3AF&icon_color=38BDF8" alt="GitHub Stats" />
+  <img src="https://streak-stats.demolab.com/?user=Danvb15&theme=tokyonight&hide_border=true&border_radius=12&background=0D1117&ring=60A5FA&fire=38BDF8&currStreakLabel=60A5FA" alt="Streak Stats" />
+  <br /><br />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Danvb15&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0D1117&title_color=60A5FA&text_color=9CA3AF" alt="Top Languages" />
 </div>
 
 ---
@@ -238,10 +231,10 @@ $ curl -s https://danvb.dev/contact.json
 
 ---
 
-### 🎮 Zona Interactiva // Curiosidades & Humor Dev
+### 🎮 Zona Interactiva // Curiosidades
 
 <details>
-  <summary><strong>👉 Haz clic aquí para ejecutar <code>danvb --fun-facts</code></strong></summary>
+  <summary><strong>👉 Haz clic aquí para ver <code>danvb --fun-facts</code></strong></summary>
   <br />
 
   ```yaml
@@ -257,19 +250,10 @@ $ curl -s https://danvb.dev/contact.json
 <br />
 
 <div align="center">
-
-  <!-- Dev Joke / Random Dev Quote Dinámico -->
-  <a href="https://readme-jokes.vercel.app/">
-    <img src="https://readme-jokes.vercel.app/api?theme=radical&hideBorder=true&bgColor=0D1117&textColor=9CA3AF&qColor=60A5FA" alt="Jokes Card" />
-  </a>
-
-  <br /><br />
-
   <p>
     ¿Tienes un proyecto desafiante, una idea innovadora o quieres hablar de arquitectura de software?<br />
-    📬 <strong>¡Conversemos!</strong> Envíame un mensaje a <a href="mailto:danieleliasvasquezbarrios31@gmail.com"><code>danieleliasvasquezbarrios31@gmail.com</code></a> o conecta en <a href="https://linkedin.com/in/Danvb15">LinkedIn</a>.
+    📬 <strong>¡Conversemos!</strong> Envíame un mensaje a <a href="mailto:danvb.dev@gmail.com"><code>danvb.dev@gmail.com</code></a> o conecta en <a href="https://linkedin.com/in/Danvb15">LinkedIn</a>.
   </p>
 
   <sub>Hecho con precisión por <a href="https://github.com/Danvb15">Daniel Vásquez</a> · Barranquilla 🇨🇴</sub>
-
 </div>
