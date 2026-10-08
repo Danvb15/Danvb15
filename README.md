@@ -1,19 +1,21 @@
 <div align="center">
 
-  <!-- Header Banner Animado -->
+  <!-- Header Cinematográfico con Ondas Fluidas Animadas -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,70:1E293B,100:3B82F6&height=220&section=header&text=DANIEL%20VASQUEZ&fontSize=44&fontColor=60A5FA&fontAlignY=38&desc=Software%20Engineer%20%E2%80%A2%20Systems%20Architect%20%E2%80%A2%20High%20Performance%20Builder&descSize=16&descAlignY=58&descAlign=50" width="100%" alt="Daniel Vasquez Banner" />
+
+  <!-- Máquina de Escribir Dinámica -->
   <a href="https://github.com/Danvb15">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&duration=3000&pause=1000&color=60A5FA&center=true&vCenter=true&width=650&lines=%C2%A1Hola!+Soy+Daniel+V%C3%A1squez+%F0%9F%91%8B;Software+Engineer+%26+Systems+Builder+%E2%9A%A1;Rust+%7C+Java+%7C+Python+%7C+TypeScript+%7C+Linux;Clean+Architecture%2C+Type+Safety+%26+Performance+%F0%9F%9B%A1%EF%B8%8F;Construyendo+software+de+alto+impacto+%F0%9F%9A%80" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=1000&color=60A5FA&center=true&vCenter=true&width=650&lines=%C2%A1Hola!+Soy+Daniel+V%C3%A1squez+%F0%9F%91%8B;Software+Engineer+%26+Systems+Builder+%E2%9A%A1;Rust+%7C+Java+%7C+Python+%7C+TypeScript+%7C+Linux;Clean+Architecture%2C+Type+Safety+%26+Performance+%F0%9F%9B%A1%EF%B8%8F;Convertidor+de+caf%C3%A9+en+c%C3%B3digo+escalable+%E2%98%95%F0%9F%92%BB" alt="Typing SVG" />
   </a>
 
   <p align="center">
-    <strong>Ingeniero de Software · Arquitectura de Sistemas · Soluciones Digitales Robustas</strong><br />
     📍 Barranquilla, Atlántico (Colombia) 🇨🇴
   </p>
 
-  <!-- Badges de Estado, Métricas y Enfoque -->
+  <!-- Badges de Estado y Enfoque -->
   <p align="center">
     <a href="https://github.com/Danvb15">
-      <img src="https://komarev.com/ghpvc/?username=Danvb15&color=3b82f6&style=flat-square&label=VISTAS+AL+PERFIL" alt="Profile Views" />
+      <img src="https://komarev.com/ghpvc/?username=Danvb15&color=3b82f6&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
     </a>
     <img src="https://img.shields.io/badge/Status-Building%20%26%20Shipping-22c55e?style=flat-square" alt="Status" />
     <img src="https://img.shields.io/badge/Enfoque-Clean%20Code%20%26%20Security-6366f1?style=flat-square" alt="Focus" />
@@ -37,9 +39,27 @@
 
 ---
 
-### 💻 Consola Interactiva de Daniel // CLI Simulator
+### 🧬 Ficha Técnica de Operador // Developer Specs
 
-> *Haz clic en cualquiera de los comandos para desplegar su salida en terminal:*
+```yaml
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  OPERATOR: Daniel Vásquez [danvb]             CLASS: SYSTEMS ARCHITECT      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  ATRIBUTOS DE INGENIERÍA:                                                   │
+│  • Arquitectura & Clean Code  : [████████████████████] 99%  [S-RANK]        │
+│  • Backend Concurrente & ACID : [██████████████████░░] 94%  [S-RANK]        │
+│  • Desktop Core & Rust/Tauri  : [████████████████░░░░] 85%  [A-RANK]        │
+│  • Pipelines IA Vectorial RAG : [█████████████████░░░] 88%  [A-RANK]        │
+│  • Infraestructura & Homelab  : [█████████████████░░░] 90%  [A-RANK]        │
+│  • Ingesta de Café Diario     : [████████████████████] 100% [OVERCLOCK]     │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 🎮 Terminal Interactiva // CLI Simulator & Misión
+
+> *Haz clic en cualquiera de los comandos para interactuar:*
 
 <details open>
   <summary><strong>▶ <code>danvb status --live</code></strong> (Estado actual & objetivos)</summary>
@@ -54,6 +74,47 @@
 • Objectives   : Construir sistemas escalables con latencias mínimas (<150ms)
 • Mindset      : "Eliminar la complejidad accidental. Código mantenible y tipado estricto."
 ```
+</details>
+
+<details>
+  <summary><strong>🚨 <code>danvb quest --incident-03am</code></strong> (Mini-Misión: ¡Salva el servidor!)</summary>
+  <br />
+
+> **SITUACIÓN:** Son las 03:14 AM. Suena la alarma de PagerDuty: La latencia de base de datos se disparó a **4,500ms** y el CPU está al 98%. ¿Qué decisión tomas?
+
+<details>
+  <summary>🔴 <strong>Opción A: Reiniciar el servidor a ciegas</strong></summary>
+  <br />
+
+  ```diff
+  - 💥 ERROR 500: ¡Desastre total!
+  - Reiniciaste y corrompiste transacciones en vuelo del pool JDBC.
+  - Tu equipo de guardia te busca con antorchas. (-500 Aura)
+  ```
+</details>
+
+<details>
+  <summary>🟢 <strong>Opción B: Analizar pg_stat_activity, locks de PostgreSQL y caché Redis</strong></summary>
+  <br />
+
+  ```diff
+  + 🎯 ¡ÉXITO TOTAL!
+  + Detectaste un lock exclusivo sin índice en una transacción masiva.
+  + Creaste un índice concurrente y purgaste la caché caliente.
+  + Latencia restaurada a 38ms. El servidor respira en paz. (+1000 XP Senior)
+  ```
+</details>
+
+<details>
+  <summary>🟡 <strong>Opción C: "Fue culpa de los DNS" y volver a dormir</strong></summary>
+  <br />
+
+  ```bash
+  ☕ Respuesta legendaria de dev senior.
+  Nadie sabe si es broma o realidad, pero nadie se atreve a contradecirte.
+  ```
+</details>
+
 </details>
 
 <details>
@@ -100,20 +161,6 @@ $ curl -s https://danvb.dev/contact.json
   "linkedin": "https://linkedin.com/in/Danvb15",
   "location": "Barranquilla, Atlántico (Colombia) 🇨🇴"
 }
-```
-</details>
-
-<details>
-  <summary><strong>▶ <code>danvb easter-egg --joke</code></strong> (Humor geek)</summary>
-  <br />
-
-```bash
-$ danvb run joke.sh
-- "¿Por qué a los programadores les gusta el modo oscuro?"
-- "Porque la luz atrae a los bugs. 🐛"
-
-$ danvb run laws.sh
-"Ley de Hofstadter: Todo toma más tiempo del que crees, incluso cuando tomas en cuenta la Ley de Hofstadter."
 ```
 </details>
 
@@ -256,4 +303,9 @@ $ danvb run laws.sh
   </p>
 
   <sub>Hecho con precisión por <a href="https://github.com/Danvb15">Daniel Vásquez</a> · Barranquilla 🇨🇴</sub>
+
+  <br /><br />
+
+  <!-- Footer con Onda Inversa de Cierre Cinematográfico -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,70:1E293B,100:3B82F6&height=100&section=footer" width="100%" alt="Footer Wave" />
 </div>
