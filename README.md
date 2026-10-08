@@ -190,13 +190,16 @@ configuracion:
 
 ---
 
-### 💻 Terminal de Ingeniería // Live CLI & Observability
+### 💻 Terminal de Ingeniería // Live CLI & Cyberpunk Experience
 
 ```bash
-# ⚡ EJECUTA ESTO EN TU TERMINAL (Linux / macOS / PowerShell):
-curl -sL https://raw.githubusercontent.com/Danvb15/Danvb15/main/danvb.json
+# ⚡ En Linux, macOS o Git Bash (Con colores ANSI y música de fondo):
+curl -sL https://raw.githubusercontent.com/Danvb15/Danvb15/main/danvb.sh | bash
+
+# ⚡ En Windows PowerShell (Con colores y música de fondo):
+irm https://raw.githubusercontent.com/Danvb15/Danvb15/main/danvb.ps1 | iex
 ```
-> *💡 El comando anterior es **100% real**: descarga e imprime mi perfil completo, arquitectura y datos de contacto formateados en tu consola.*
+> *💡 **100% Real e Interactivo:** Al ejecutar el comando en tu terminal, se abrirá una consola Cyberpunk interactiva a todo color, con música de fondo en loop (Synthwave), telemetría en vivo y navegación por teclado.*
 
 ---
 
