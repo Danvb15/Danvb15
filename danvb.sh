@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# DANIEL VASQUEZ [danvb] - Interactive Cyberpunk Terminal Experience
+# DANIEL VASQUEZ [danvb] - Infinite Cyberdeck Stream & Observability Monitor
 # Usage: curl -sL https://raw.githubusercontent.com/Danvb15/Danvb15/main/danvb.sh | bash
 # ==============================================================================
 
-# ANSI Color Codes (256-color & truecolor neon)
+# ANSI Colors
 RESET="\033[0m"
 BOLD="\033[1m"
 DIM="\033[2m"
-
 CYAN="\033[38;5;51m"
 MAGENTA="\033[38;5;201m"
 BLUE="\033[38;5;39m"
@@ -16,9 +15,7 @@ GREEN="\033[38;5;82m"
 YELLOW="\033[38;5;226m"
 WHITE="\033[38;5;255m"
 DARK_GRAY="\033[38;5;240m"
-BG_DARK="\033[48;5;234m"
 
-# Audio setup
 AUDIO_URL="https://raw.githubusercontent.com/Danvb15/Danvb15/main/theme.wav"
 TMP_AUDIO="/tmp/danvb_theme.wav"
 MUSIC_PID=""
@@ -28,192 +25,117 @@ cleanup() {
     kill "$MUSIC_PID" 2>/dev/null
     wait "$MUSIC_PID" 2>/dev/null
   fi
-  # Windows background powershell stop
   if command -v powershell.exe >/dev/null 2>&1; then
     powershell.exe -NoProfile -Command "Get-Process -Name powershell -ErrorAction SilentlyContinue | Where-Object { \$_.MainWindowTitle -eq 'danvb_audio' } | Stop-Process" 2>/dev/null
   fi
   rm -f "$TMP_AUDIO" 2>/dev/null
-  echo -e "\n${DARK_GRAY}[TERMINAL SESSION TERMINATED] ¡Gracias por visitar!${RESET}\n"
+  echo -e "\n${DARK_GRAY}[STREAM DISCONNECTED] Sesión finalizada con éxito. ¡Gracias por visitar!${RESET}\n"
   exit 0
 }
 
 trap cleanup EXIT INT TERM
 
-start_music() {
-  # Download audio quietly
-  if [ ! -f "$TMP_AUDIO" ]; then
-    curl -sL "$AUDIO_URL" -o "$TMP_AUDIO" 2>/dev/null
-  fi
+# Start audio in background
+if [ ! -f "$TMP_AUDIO" ]; then
+  curl -sL "$AUDIO_URL" -o "$TMP_AUDIO" 2>/dev/null
+fi
 
-  if [ -f "$TMP_AUDIO" ]; then
-    if command -v afplay >/dev/null 2>&1; then
-      # macOS native audio player
-      while true; do afplay "$TMP_AUDIO" 2>/dev/null; done &
-      MUSIC_PID=$!
-    elif command -v paplay >/dev/null 2>&1; then
-      # Linux PulseAudio
-      while true; do paplay "$TMP_AUDIO" 2>/dev/null; done &
-      MUSIC_PID=$!
-    elif command -v aplay >/dev/null 2>&1; then
-      # Linux ALSA
-      while true; do aplay -q "$TMP_AUDIO" 2>/dev/null; done &
-      MUSIC_PID=$!
-    elif command -v ffplay >/dev/null 2>&1; then
-      # Cross-platform ffplay
-      ffplay -nodisp -loop 0 -loglevel quiet "$TMP_AUDIO" 2>/dev/null &
-      MUSIC_PID=$!
-    elif command -v mpv >/dev/null 2>&1; then
-      # Cross-platform mpv
-      mpv --no-video --really-quiet --loop "$TMP_AUDIO" 2>/dev/null &
-      MUSIC_PID=$!
-    elif command -v powershell.exe >/dev/null 2>&1; then
-      # Windows Git Bash / WSL
-      powershell.exe -NoProfile -Command "\$p = New-Object System.Media.SoundPlayer('$TMP_AUDIO'); \$p.PlayLooping(); Start-Sleep -Seconds 600" 2>/dev/null &
-      MUSIC_PID=$!
-    fi
+if [ -f "$TMP_AUDIO" ]; then
+  if command -v afplay >/dev/null 2>&1; then
+    while true; do afplay "$TMP_AUDIO" 2>/dev/null; done &
+    MUSIC_PID=$!
+  elif command -v paplay >/dev/null 2>&1; then
+    while true; do paplay "$TMP_AUDIO" 2>/dev/null; done &
+    MUSIC_PID=$!
+  elif command -v aplay >/dev/null 2>&1; then
+    while true; do aplay -q "$TMP_AUDIO" 2>/dev/null; done &
+    MUSIC_PID=$!
+  elif command -v ffplay >/dev/null 2>&1; then
+    ffplay -nodisp -loop 0 -loglevel quiet "$TMP_AUDIO" 2>/dev/null &
+    MUSIC_PID=$!
+  elif command -v mpv >/dev/null 2>&1; then
+    mpv --no-video --really-quiet --loop "$TMP_AUDIO" 2>/dev/null &
+    MUSIC_PID=$!
+  elif command -v powershell.exe >/dev/null 2>&1; then
+    powershell.exe -NoProfile -Command "\$p = New-Object System.Media.SoundPlayer('$TMP_AUDIO'); \$p.PlayLooping(); Start-Sleep -Seconds 3600" 2>/dev/null &
+    MUSIC_PID=$!
   fi
+fi
+
+stream_line() {
+  local text="$1"
+  local delay="${2:-0.12}"
+  echo -e "$text"
+  sleep "$delay"
 }
 
-toggle_music() {
-  if [ -n "$MUSIC_PID" ] && kill -0 "$MUSIC_PID" 2>/dev/null; then
-    kill "$MUSIC_PID" 2>/dev/null
-    MUSIC_PID=""
-    echo -e "${YELLOW}♫ Audio silenciado.${RESET}"
-  else
-    start_music
-    echo -e "${GREEN}♫ Audio activado en segundo plano.${RESET}"
-  fi
-  sleep 1
+get_timestamp() {
+  date +"%H:%M:%S"
 }
 
-# Start music in background
-start_music
+clear
+stream_line "${CYAN}  ██████╗   █████╗  ███╗   ██╗ ██╗   ██╗ ██████╗ ${RESET}" 0.05
+stream_line "${CYAN}  ██╔══██╗ ██╔══██╗ ████╗  ██║ ██║   ██║ ██╔══██╗${RESET}" 0.05
+stream_line "${CYAN}  ██║  ██║ ███████║ ██╔██╗ ██║ ██║   ██║ ██████╔╝${RESET}" 0.05
+stream_line "${CYAN}  ██║  ██║ ██╔══██║ ██║╚██╗██║ ╚██╗ ██╔╝ ██╔══██╗${RESET}" 0.05
+stream_line "${CYAN}  ██████╔╝ ██║  ██║ ██║ ╚████║  ╚████╔╝  ██████╔╝${RESET}" 0.05
+stream_line "${CYAN}  ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═══╝   ╚═══╝   ╚═════╝ ${RESET}" 0.05
+stream_line "${MAGENTA}  ── [ DANVB // INFINITE TELEMETRY & OBSERVABILITY STREAM ] ──${RESET}" 0.1
+stream_line "${DARK_GRAY}  Operador: Daniel Vásquez  ·  Barranquilla, Colombia 🇨🇴  ·  danvb.dev@gmail.com${RESET}" 0.1
+stream_line "${BLUE}  ────────────────────────────────────────────────────────────────────────${RESET}" 0.1
+stream_line "${GREEN}  ♫ Audio de Fondo: Synthwave Ambient Stream [Activo]  ·  Presiona [Ctrl+C] para salir${RESET}" 0.3
+stream_line "${BLUE}  ────────────────────────────────────────────────────────────────────────${RESET}\n" 0.3
 
-show_banner() {
-  clear
-  echo -e "${CYAN}"
-  echo "  ██████╗   █████╗  ███╗   ██╗ ██╗   ██╗ ██████╗ "
-  echo "  ██╔══██╗ ██╔══██╗ ████╗  ██║ ██║   ██║ ██╔══██╗"
-  echo "  ██║  ██║ ███████║ ██╔██╗ ██║ ██║   ██║ ██████╔╝"
-  echo "  ██║  ██║ ██╔══██║ ██║╚██╗██║ ╚██╗ ██╔╝ ██╔══██╗"
-  echo "  ██████╔╝ ██║  ██║ ██║ ╚████║  ╚████╔╝  ██████╔╝"
-  echo "  ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═══╝   ╚═══╝   ╚═════╝ "
-  echo -e "${MAGENTA}  ── [ SOFTWARE ENGINEER & SYSTEMS ARCHITECT ] ──${RESET}"
-  echo -e "${DARK_GRAY}  📍 Barranquilla, Colombia 🇨🇴  ·  danvb.dev@gmail.com${RESET}"
-  echo -e "${BLUE}  ────────────────────────────────────────────────────────────${RESET}"
-  if [ -n "$MUSIC_PID" ]; then
-    echo -e "  ${GREEN}♫ Audio en vivo: [Synthwave Chill Loop] (Reproduciendo en fondo)${RESET}"
-  else
-    echo -e "  ${YELLOW}♫ Audio: [Silenciado] (Presiona 'm' para reactivar)${RESET}"
-  fi
-  echo -e "${BLUE}  ────────────────────────────────────────────────────────────${RESET}"
-}
-
-pause_screen() {
-  echo ""
-  echo -e "${DARK_GRAY}Presiona [ENTER] para volver al menú principal...${RESET}"
-  read -r
-}
+CYCLE=1
 
 while true; do
-  show_banner
-  echo -e "${BOLD}${WHITE}  SELECCIONA UN MÓDULO PARA EXPLORAR:${RESET}"
+  TS=$(get_timestamp)
+  stream_line "${BOLD}${MAGENTA}▶ [CICLO TELEMETRÍA #${CYCLE} // LIVE MONITOR] ───────────────────────────${RESET}" 0.15
+  stream_line "  ${DARK_GRAY}[$TS]${RESET} ${GREEN}✔${RESET} Kernel: Linux Debian Core & Proxmox VE (x86_64)" 0.1
+  stream_line "  ${DARK_GRAY}[$TS]${RESET} ${GREEN}✔${RESET} Security Vault: OS Keyring initialized · 0 plaintext secrets" 0.1
+  stream_line "  ${DARK_GRAY}[$TS]${RESET} ${GREEN}✔${RESET} Fuel State: Café Colombiano de Especialidad [100% OVERCLOCK]" 0.15
   echo ""
-  echo -e "  ${CYAN}[1]${RESET} ${BOLD}👨‍💻  Sobre Mí & Filosofía de Ingeniería${RESET}"
-  echo -e "  ${CYAN}[2]${RESET} ${BOLD}🛠️   Stack Tecnológico de Producción${RESET}"
-  echo -e "  ${CYAN}[3]${RESET} ${BOLD}🚀  Proyectos Destacados (Arquitectura & Seguridad)${RESET}"
-  echo -e "  ${CYAN}[4]${RESET} ${BOLD}⚡  Benchmark de Latencias en Tiempo Real${RESET}"
-  echo -e "  ${CYAN}[5]${RESET} ${BOLD}📬  Canales de Contacto Directo${RESET}"
-  echo -e "  ${YELLOW}[m]${RESET} ${DIM}♫   Alternar Música de Fondo (ON/OFF)${RESET}"
-  echo -e "  ${MAGENTA}[0]${RESET} ${DIM}🚪  Salir${RESET}"
-  echo ""
-  echo -en "  ${CYAN}danvb@terminal:~$ ${RESET}"
-  read -r choice
 
-  case "$choice" in
-    1)
-      show_banner
-      echo -e "${BOLD}${CYAN}=== 👨‍💻 SOBRE MÍ & FILOSOFÍA ===${RESET}\n"
-      echo -e "  ${WHITE}Nombre:${RESET}       Daniel Elías Vásquez Barrios (danvb)"
-      echo -e "  ${WHITE}Rol:${RESET}          Software Engineer & Systems Builder"
-      echo -e "  ${WHITE}Ubicación:${RESET}    Barranquilla, Atlántico (Colombia) 🇨🇴"
-      echo -e "  ${WHITE}Enfoque:${RESET}      Eliminar la complejidad accidental."
-      echo ""
-      echo -e "  ${BOLD}${YELLOW}Pilares de Desarrollo:${RESET}"
-      echo -e "  ${GREEN}✔${RESET} 100% Type Safety (Compilador estricto, cero sorpresas en runtime)"
-      echo -e "  ${GREEN}✔${RESET} Latencias sub-100ms con pools de conexiones y concurrencia optimista"
-      echo -e "  ${GREEN}✔${RESET} Cero secretos en texto plano (Custodia nativa en OS Keyring)"
-      echo -e "  ${GREEN}✔${RESET} Arquitectura modular basada en componentes independientes"
-      pause_screen
-      ;;
-    2)
-      show_banner
-      echo -e "${BOLD}${CYAN}=== 🛠️ STACK TECNOLÓGICO DE PRODUCCIÓN ===${RESET}\n"
-      echo -e "  ${MAGENTA}[LENGUAJES]${RESET}      TypeScript, Python, Java 21, Rust, SQL, Bash"
-      echo -e "  ${BLUE}[BACKEND]${RESET}        Spring Boot 3, FastAPI, Node.js, Express, RESTful APIs"
-      echo -e "  ${CYAN}[FRONTEND]${RESET}       React, Next.js, Vite, Astro, Tailwind CSS, Zustand"
-      echo -e "  ${GREEN}[BASES DE DATOS]${RESET} PostgreSQL, Redis (Caché), pgvector, SQLite, MySQL"
-      echo -e "  ${YELLOW}[DESKTOP/MOBILE]${RESET} Tauri 2 (Rust Core), React Native, Expo Router"
-      echo -e "  ${WHITE}[INFRA & DEVOPS]${RESET} Docker, Linux (Debian), Proxmox VE, WireGuard, Tailscale"
-      pause_screen
-      ;;
-    3)
-      show_banner
-      echo -e "${BOLD}${CYAN}=== 🚀 PROYECTOS DESTACADOS ===${RESET}\n"
-      echo -e "  ${BOLD}${WHITE}1. REMOTE MANAGER${RESET}  ${DARK_GRAY}[Tauri 2 · Rust · React · SQLite]${RESET}"
-      echo -e "     Software de escritorio para administración centralizada de servidores SSH/RDP."
-      echo -e "     ${GREEN}★ Highlight:${RESET} Custodia criptográfica nativa en OS Keyring. 0 RAM leaks."
-      echo ""
-      echo -e "  ${BOLD}${WHITE}2. TECHSTOCK${RESET}        ${DARK_GRAY}[Java 21 · Spring Boot 3 · PostgreSQL · Expo]${RESET}"
-      echo -e "     Plataforma multi-tenant de inventario y punto de venta comercial."
-      echo -e "     ${GREEN}★ Highlight:${RESET} Bloqueo optimista (Optimistic Locking) y auditoría inmutable."
-      echo ""
-      echo -e "  ${BOLD}${WHITE}3. AI BUSINESS AGENT${RESET} ${DARK_GRAY}[FastAPI · Python · pgvector · Redis · Claude]${RESET}"
-      echo -e "     Agente inteligente con pipeline RAG asíncrono y memoria vectorial."
-      echo -e "     ${GREEN}★ Highlight:${RESET} Mitigación estricta de alucinaciones y embeddings sub-100ms."
-      echo ""
-      echo -e "  ${BOLD}${WHITE}4. HOMELAB INFRA${RESET}    ${DARK_GRAY}[Proxmox VE · Docker · WireGuard · Linux]${RESET}"
-      echo -e "     Laboratorio de virtualización y red mallada cifrada punto a punto."
-      echo -e "     ${GREEN}★ Highlight:${RESET} Zero open ports. Servicios segmentados en LXC y VMs."
-      pause_screen
-      ;;
-    4)
-      show_banner
-      echo -e "${BOLD}${CYAN}=== ⚡ BENCHMARK DE LATENCIAS EN PRODUCCIÓN ===${RESET}\n"
-      echo -e "${DARK_GRAY}Ejecutando pings en microservicios e infraestructura...${RESET}\n"
-      sleep 0.5
-      echo -e "  ${BOLD}SUBSISTEMA                 PROTOCOLO   ESTADO      LATENCIA (p99)${RESET}"
-      echo -e "  ------------------------------------------------------------------"
-      sleep 0.2
-      echo -e "  ${WHITE}/desktop/core/keyring      ${CYAN}IPC/Rust    ${GREEN}SALUDABLE   ${YELLOW}1.2ms${RESET}"
-      sleep 0.2
-      echo -e "  ${WHITE}/backend/inventory/pos     ${BLUE}HTTP/Java   ${GREEN}200 OK      ${YELLOW}34.8ms${RESET}"
-      sleep 0.2
-      echo -e "  ${WHITE}/ai/rag/pgvector           ${MAGENTA}FastAPI     ${GREEN}200 OK      ${YELLOW}78.4ms${RESET}"
-      sleep 0.2
-      echo -e "  ${WHITE}/homelab/wireguard-mesh    ${CYAN}P2P/UDP     ${GREEN}ACTIVO      ${YELLOW}3.8ms${RESET}"
-      echo -e "  ------------------------------------------------------------------"
-      echo -e "  ${GREEN}[STATUS] Disponibilidad: 99.9% · 0 fugas de memoria · Concurrencia óptima${RESET}"
-      pause_screen
-      ;;
-    5)
-      show_banner
-      echo -e "${BOLD}${CYAN}=== 📬 CANALES DE CONTACTO DIRECTO ===${RESET}\n"
-      echo -e "  ${YELLOW}✉  Email:${RESET}    danvb.dev@gmail.com"
-      echo -e "  ${BLUE}🐙 GitHub:${RESET}   https://github.com/Danvb15"
-      echo -e "  ${CYAN}💼 LinkedIn:${RESET} https://linkedin.com/in/Danvb15"
-      echo -e "  ${MAGENTA}📍 Origen:${RESET}   Barranquilla, Atlántico (Colombia) 🇨🇴"
-      pause_screen
-      ;;
-    m|M)
-      toggle_music
-      ;;
-    0)
-      cleanup
-      ;;
-    *)
-      echo -e "${YELLOW}Opción no reconocida.${RESET}"
-      sleep 0.8
-      ;;
-  esac
+  stream_line "${BOLD}${CYAN}--- [ SUB-SISTEMAS & TELEMETRÍA DE RED EN VIVO ] ---------------------${RESET}" 0.15
+  stream_line "  ${WHITE}GET  /desktop/core/keyring${RESET}      --> ${CYAN}IPC/Rust${RESET}    ${GREEN}[  1.2ms ]${RESET}  ${DARK_GRAY}AUTH CIPHER: AES-256${RESET}" 0.18
+  stream_line "  ${WHITE}POST /api/inventory/pos/tx${RESET}      --> ${BLUE}Java/ACID${RESET}   ${GREEN}[ 34.8ms ]${RESET}  ${DARK_GRAY}TENANT: ISOLATED (OK)${RESET}" 0.18
+  stream_line "  ${WHITE}GET  /ai/vector/rag/semantic${RESET}    --> ${MAGENTA}FastAPI${RESET}     ${GREEN}[ 78.4ms ]${RESET}  ${DARK_GRAY}COSINE SIM: 0.9412${RESET}" 0.18
+  stream_line "  ${WHITE}UDP  /mesh/wireguard/peer-hq${RESET}    --> ${YELLOW}WireGuard${RESET}   ${GREEN}[  3.8ms ]${RESET}  ${DARK_GRAY}ZERO OPEN PORTS (P2P)${RESET}" 0.25
+  echo ""
+
+  stream_line "${BOLD}${BLUE}--- [ PILARES DE ARQUITECTURA & FILOSOFÍA ] -------------------------${RESET}" 0.15
+  stream_line "  ${YELLOW}• Filosofía${RESET}    : Eliminar la complejidad accidental. Código mantenible y limpio." 0.12
+  stream_line "  ${YELLOW}• Type Safety${RESET}  : 100% Estricto (Rust, TypeScript, Java 21) · 0 runtime surprises." 0.12
+  stream_line "  ${YELLOW}• Concurrencia${RESET} : Bloqueo optimista, sin carreras críticas ni contención de pool." 0.12
+  stream_line "  ${YELLOW}• Rendimiento${RESET}  : Sub-35MB RAM en escritorio · Latencias de API sub-100ms." 0.2
+  echo ""
+
+  stream_line "${BOLD}${GREEN}--- [ ARSENAL EN PRODUCCIÓN & PROYECTOS DESTACADOS ] ----------------${RESET}" 0.15
+  stream_line "  ${BOLD}${WHITE}1. REMOTE MANAGER${RESET}  ${DARK_GRAY}[Rust · Tauri 2 · React · SQLite · OS Keyring]${RESET}" 0.12
+  stream_line "     Custodia nativa de credenciales SSH/RDP. Destrucción de secretos en RAM." 0.1
+  stream_line "  ${BOLD}${WHITE}2. TECHSTOCK${RESET}        ${DARK_GRAY}[Java 21 · Spring Boot 3 · PostgreSQL · Expo Native]${RESET}" 0.12
+  stream_line "     SaaS multi-tenant para retail con auditoría contable inmutable." 0.1
+  stream_line "  ${BOLD}${WHITE}3. AI BUSINESS AGENT${RESET} ${DARK_GRAY}[FastAPI · Python · pgvector · Redis · Claude]${RESET}" 0.12
+  stream_line "     Pipeline RAG semántico asíncrono con control riguroso de alucinaciones." 0.1
+  stream_line "  ${BOLD}${WHITE}4. HOMELAB INFRA${RESET}    ${DARK_GRAY}[Proxmox VE · Docker Compose · WireGuard · Linux]${RESET}" 0.12
+  stream_line "     Virtualización segmentada, nubes privadas y redes malladas seguras." 0.25
+  echo ""
+
+  stream_line "${BOLD}${YELLOW}--- [ OBSERVABILIDAD & ESTADO DE SALUD DEL NODO ] -------------------${RESET}" 0.15
+  stream_line "  Desktop Memory Footprint : ${CYAN}[████░░░░░░░░░░░░░░░░]${RESET} 28.4 MB (Tauri 2 / Rust Core)" 0.12
+  stream_line "  Pool Connection Health   : ${GREEN}[████████████████████]${RESET} 100% ACID Integrity (No Leaks)" 0.12
+  stream_line "  Uptime de Disponibilidad : ${GREEN}[████████████████████]${RESET} 99.9% Production Ready" 0.12
+  stream_line "  Canal de Comunicación    : ${WHITE}danvb.dev@gmail.com  ·  https://linkedin.com/in/Danvb15${RESET}" 0.3
+  echo ""
+
+  # Progress bar to next cycle
+  echo -en "  ${DARK_GRAY}Sincronizando siguiente bloque de telemetría: ${RESET}"
+  for i in {1..20}; do
+    echo -en "${CYAN}█${RESET}"
+    sleep 0.08
+  done
+  echo -e " ${GREEN}100% OK${RESET}\n"
+  sleep 0.5
+
+  CYCLE=$((CYCLE + 1))
 done

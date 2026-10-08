@@ -1,11 +1,10 @@
 # ==============================================================================
-# DANIEL VASQUEZ [danvb] - Interactive Cyberpunk Terminal Experience (PowerShell)
+# DANIEL VASQUEZ [danvb] - Infinite Cyberdeck Stream & Observability Monitor
 # Usage: irm https://raw.githubusercontent.com/Danvb15/Danvb15/main/danvb.ps1 | iex
 # ==============================================================================
 
-$Host.UI.RawUI.WindowTitle = "DANIEL VASQUEZ [danvb] - Developer CLI"
+$Host.UI.RawUI.WindowTitle = "DANIEL VASQUEZ [danvb] - Telemetry Stream Monitor"
 
-# Setup background audio
 $audioUrl = "https://raw.githubusercontent.com/Danvb15/Danvb15/main/theme.wav"
 $tempAudio = Join-Path $env:TEMP "danvb_theme.wav"
 $global:player = $null
@@ -32,145 +31,92 @@ function Stop-BgMusic {
     }
 }
 
-# Start background audio
+# Start music
 Start-BgMusic
 
-function Show-Banner {
-    Clear-Host
-    Write-Host ""
-    Write-Host "   ____    _    _   _ ___ _____ _      " -ForegroundColor Cyan
-    Write-Host "  |  _ \  / \  | \ | |_ _| ____| |     " -ForegroundColor Cyan
-    Write-Host "  | | | |/ _ \ |  \| || ||  _| | |     " -ForegroundColor Cyan
-    Write-Host "  | |_| / ___ \| |\  || || |___| |___  " -ForegroundColor Cyan
-    Write-Host "  |____/_/   \_\_| \_|___|_____|_____| " -ForegroundColor Cyan
-    Write-Host "  [ SOFTWARE ENGINEER & SYSTEMS ARCHITECT ]" -ForegroundColor Magenta
-    Write-Host "  Barranquilla, Colombia | danvb.dev@gmail.com" -ForegroundColor DarkGray
-    Write-Host "  ------------------------------------------------------------" -ForegroundColor Blue
-    if ($global:player -ne $null) {
-        Write-Host "  [AUDIO ACTIVO] Synthwave Chill Loop (Reproduciendo en fondo)" -ForegroundColor Green
-    } else {
-        Write-Host "  [AUDIO MUTE] Silenciado (Presiona m para reactivar)" -ForegroundColor Yellow
-    }
-    Write-Host "  ------------------------------------------------------------" -ForegroundColor Blue
+function Stream-Line {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$Text,
+        [ConsoleColor]$Color = [ConsoleColor]::White,
+        [int]$DelayMs = 120
+    )
+    Write-Host $Text -ForegroundColor $Color
+    Start-Sleep -Milliseconds $DelayMs
 }
 
-function Pause-Screen {
-    Write-Host ""
-    Write-Host "Presiona [ENTER] para volver al menu principal..." -ForegroundColor DarkGray
-    [void][System.Console]::ReadLine()
-}
+Clear-Host
+Write-Host ""
+Stream-Line -Text "   ____    _    _   _ ___ _____ _      " -Color Cyan -DelayMs 40
+Stream-Line -Text "  |  _ \  / \  | \ | |_ _| ____| |     " -Color Cyan -DelayMs 40
+Stream-Line -Text "  | | | |/ _ \ |  \| || ||  _| | |     " -Color Cyan -DelayMs 40
+Stream-Line -Text "  | |_| / ___ \| |\  || || |___| |___  " -Color Cyan -DelayMs 40
+Stream-Line -Text "  |____/_/   \_\_| \_|___|_____|_____| " -Color Cyan -DelayMs 40
+Stream-Line -Text "  [ DANVB // INFINITE TELEMETRY & OBSERVABILITY STREAM ]" -Color Magenta -DelayMs 80
+Stream-Line -Text "  Operador: Daniel Vasquez | Barranquilla, Colombia | danvb.dev@gmail.com" -Color DarkGray -DelayMs 80
+Stream-Line -Text "  ------------------------------------------------------------------------" -Color Blue -DelayMs 80
+Stream-Line -Text "  Audio de Fondo: Synthwave Ambient Stream [Activo] | Salir: [Ctrl+C]" -Color Green -DelayMs 200
+Stream-Line -Text "  ------------------------------------------------------------------------" -Color Blue -DelayMs 200
+Write-Host ""
+
+$cycle = 1
 
 try {
-    $running = $true
-    while ($running) {
-        Show-Banner
-        Write-Host "  SELECCIONA UN MODULO PARA EXPLORAR:" -ForegroundColor White
+    while ($true) {
+        $ts = (Get-Date).ToString("HH:mm:ss")
+        Stream-Line -Text ("▶ [CICLO TELEMETRIA #" + $cycle + " // LIVE MONITOR] ---------------------------") -Color Magenta -DelayMs 140
+        Stream-Line -Text ("  [" + $ts + "] Kernel: Linux Debian Core & Proxmox VE (x86_64)") -Color Green -DelayMs 90
+        Stream-Line -Text ("  [" + $ts + "] Security Vault: OS Keyring initialized - 0 plaintext secrets") -Color Green -DelayMs 90
+        Stream-Line -Text ("  [" + $ts + "] Fuel State: Cafe Colombiano de Especialidad [100% OVERCLOCK]") -Color Green -DelayMs 130
         Write-Host ""
-        Write-Host "  [1] Sobre Mi & Filosofia de Ingenieria" -ForegroundColor Cyan
-        Write-Host "  [2] Stack Tecnologico de Produccion" -ForegroundColor Cyan
-        Write-Host "  [3] Proyectos Destacados (Arquitectura & Seguridad)" -ForegroundColor Cyan
-        Write-Host "  [4] Benchmark de Latencias en Tiempo Real" -ForegroundColor Cyan
-        Write-Host "  [5] Canales de Contacto Directo" -ForegroundColor Cyan
-        Write-Host "  [m] Alternar Musica de Fondo (ON/OFF)" -ForegroundColor Yellow
-        Write-Host "  [0] Salir" -ForegroundColor Magenta
-        Write-Host ""
-        Write-Host "  danvb@terminal:~$ " -NoNewline -ForegroundColor Cyan
-        $choice = [System.Console]::ReadLine()
 
-        if ($choice -eq "1") {
-            Show-Banner
-            Write-Host "=== SOBRE MI & FILOSOFIA ===" -ForegroundColor Cyan
-            Write-Host ""
-            Write-Host "  Nombre:       Daniel Elias Vasquez Barrios (danvb)" -ForegroundColor White
-            Write-Host "  Rol:          Software Engineer & Systems Builder" -ForegroundColor White
-            Write-Host "  Ubicacion:    Barranquilla, Atlantico (Colombia)" -ForegroundColor White
-            Write-Host "  Enfoque:      Eliminar la complejidad accidental." -ForegroundColor White
-            Write-Host ""
-            Write-Host "  Pilares de Desarrollo:" -ForegroundColor Yellow
-            Write-Host "  [OK] 100% Type Safety (Compilador estricto, cero sorpresas en runtime)" -ForegroundColor Green
-            Write-Host "  [OK] Latencias sub-100ms con pools de conexiones y concurrencia optimista" -ForegroundColor Green
-            Write-Host "  [OK] Cero secretos en texto plano (Custodia nativa en OS Keyring)" -ForegroundColor Green
-            Write-Host "  [OK] Arquitectura modular basada en componentes independientes" -ForegroundColor Green
-            Pause-Screen
+        Stream-Line -Text "--- [ SUB-SISTEMAS & TELEMETRIA DE RED EN VIVO ] ---------------------" -Color Cyan -DelayMs 130
+        Stream-Line -Text "  GET  /desktop/core/keyring      --> IPC/Rust    [  1.2ms ]  CIPHER: AES-256" -Color White -DelayMs 160
+        Stream-Line -Text "  POST /api/inventory/pos/tx      --> Java/ACID   [ 34.8ms ]  TENANT: ISOLATED" -Color White -DelayMs 160
+        Stream-Line -Text "  GET  /ai/vector/rag/semantic    --> FastAPI     [ 78.4ms ]  COSINE: 0.9412" -Color White -DelayMs 160
+        Stream-Line -Text "  UDP  /mesh/wireguard/peer-hq    --> WireGuard   [  3.8ms ]  ZERO OPEN PORTS" -Color White -DelayMs 220
+        Write-Host ""
+
+        Stream-Line -Text "--- [ PILARES DE ARQUITECTURA & FILOSOFIA ] -------------------------" -Color Blue -DelayMs 130
+        Stream-Line -Text "  * Filosofia    : Eliminar la complejidad accidental. Codigo limpio y modular." -Color Yellow -DelayMs 100
+        Stream-Line -Text "  * Type Safety  : 100% Estricto (Rust, TypeScript, Java 21) - 0 runtime errors." -Color Yellow -DelayMs 100
+        Stream-Line -Text "  * Concurrencia : Bloqueo optimista, sin carreras criticas ni contencion." -Color Yellow -DelayMs 100
+        Stream-Line -Text "  * Rendimiento  : Sub-35MB RAM en escritorio - Latencias de API sub-100ms." -Color Yellow -DelayMs 180
+        Write-Host ""
+
+        Stream-Line -Text "--- [ ARSENAL EN PRODUCCION & PROYECTOS DESTACADOS ] ----------------" -Color Green -DelayMs 130
+        Stream-Line -Text "  1. REMOTE MANAGER  [Rust / Tauri 2 / React / SQLite / OS Keyring]" -Color White -DelayMs 100
+        Stream-Line -Text "     Custodia nativa de credenciales SSH/RDP. Destruccion de secretos en RAM." -Color DarkGray -DelayMs 80
+        Stream-Line -Text "  2. TECHSTOCK        [Java 21 / Spring Boot 3 / PostgreSQL / Expo Native]" -Color White -DelayMs 100
+        Stream-Line -Text "     SaaS multi-tenant para retail con auditoria contable inmutable." -Color DarkGray -DelayMs 80
+        Stream-Line -Text "  3. AI BUSINESS AGENT [FastAPI / Python / pgvector / Redis / Claude]" -Color White -DelayMs 100
+        Stream-Line -Text "     Pipeline RAG semantico asincrono con control riguroso de alucinaciones." -Color DarkGray -DelayMs 80
+        Stream-Line -Text "  4. HOMELAB INFRA    [Proxmox VE / Docker Compose / WireGuard / Linux]" -Color White -DelayMs 100
+        Stream-Line -Text "     Virtualizacion segmentada, nubes privadas y redes malladas seguras." -Color DarkGray -DelayMs 220
+        Write-Host ""
+
+        Stream-Line -Text "--- [ OBSERVABILIDAD & ESTADO DE SALUD DEL NODO ] -------------------" -Color Yellow -DelayMs 130
+        Stream-Line -Text "  Desktop Memory Footprint : [####----------------] 28.4 MB (Tauri 2 / Rust Core)" -Color Cyan -DelayMs 100
+        Stream-Line -Text "  Pool Connection Health   : [####################] 100% ACID Integrity (No Leaks)" -Color Green -DelayMs 100
+        Stream-Line -Text "  Uptime de Disponibilidad : [####################] 99.9% Production Ready" -Color Green -DelayMs 100
+        Stream-Line -Text "  Canal de Comunicacion    : danvb.dev@gmail.com | https://linkedin.com/in/Danvb15" -Color White -DelayMs 250
+        Write-Host ""
+
+        # Progress bar to next cycle
+        Write-Host "  Sincronizando siguiente bloque de telemetria: " -NoNewline -ForegroundColor DarkGray
+        for ($i = 0; $i -lt 20; $i++) {
+            Write-Host "#" -NoNewline -ForegroundColor Cyan
+            Start-Sleep -Milliseconds 60
         }
-        elseif ($choice -eq "2") {
-            Show-Banner
-            Write-Host "=== STACK TECNOLOGICO DE PRODUCCION ===" -ForegroundColor Cyan
-            Write-Host ""
-            Write-Host "  [LENGUAJES]      TypeScript, Python, Java 21, Rust, SQL, Bash" -ForegroundColor Magenta
-            Write-Host "  [BACKEND]        Spring Boot 3, FastAPI, Node.js, Express, RESTful APIs" -ForegroundColor Blue
-            Write-Host "  [FRONTEND]       React, Next.js, Vite, Astro, Tailwind CSS, Zustand" -ForegroundColor Cyan
-            Write-Host "  [BASES DE DATOS] PostgreSQL, Redis (Cache), pgvector, SQLite, MySQL" -ForegroundColor Green
-            Write-Host "  [DESKTOP/MOBILE] Tauri 2 (Rust Core), React Native, Expo Router" -ForegroundColor Yellow
-            Write-Host "  [INFRA & DEVOPS] Docker, Linux (Debian), Proxmox VE, WireGuard, Tailscale" -ForegroundColor White
-            Pause-Screen
-        }
-        elseif ($choice -eq "3") {
-            Show-Banner
-            Write-Host "=== PROYECTOS DESTACADOS ===" -ForegroundColor Cyan
-            Write-Host ""
-            Write-Host "  1. REMOTE MANAGER  [Tauri 2 / Rust / React / SQLite]" -ForegroundColor White
-            Write-Host "     Software de escritorio para administracion de servidores SSH/RDP."
-            Write-Host "     * Highlight: Custodia criptografica nativa en OS Keyring. 0 RAM leaks." -ForegroundColor Green
-            Write-Host ""
-            Write-Host "  2. TECHSTOCK        [Java 21 / Spring Boot 3 / PostgreSQL / Expo]" -ForegroundColor White
-            Write-Host "     Plataforma multi-tenant de inventario y punto de venta comercial."
-            Write-Host "     * Highlight: Bloqueo optimista (Optimistic Locking) y auditoria inmutable." -ForegroundColor Green
-            Write-Host ""
-            Write-Host "  3. AI BUSINESS AGENT [FastAPI / Python / pgvector / Redis / Claude]" -ForegroundColor White
-            Write-Host "     Agente inteligente con pipeline RAG asincrono y memoria vectorial."
-            Write-Host "     * Highlight: Mitigacion estricta de alucinaciones y embeddings sub-100ms." -ForegroundColor Green
-            Write-Host ""
-            Write-Host "  4. HOMELAB INFRA    [Proxmox VE / Docker / WireGuard / Linux]" -ForegroundColor White
-            Write-Host "     Laboratorio de virtualizacion y red mallada cifrada punto a punto."
-            Write-Host "     * Highlight: Zero open ports. Servicios segmentados en LXC y VMs." -ForegroundColor Green
-            Pause-Screen
-        }
-        elseif ($choice -eq "4") {
-            Show-Banner
-            Write-Host "=== BENCHMARK DE LATENCIAS EN PRODUCCION ===" -ForegroundColor Cyan
-            Write-Host ""
-            Write-Host "Ejecutando telemetria en microservicios e infraestructura..." -ForegroundColor DarkGray
-            Start-Sleep -Milliseconds 400
-            Write-Host ""
-            Write-Host "  SUBSISTEMA                 PROTOCOLO   ESTADO      LATENCIA (p99)" -ForegroundColor White
-            Write-Host "  ------------------------------------------------------------------" -ForegroundColor DarkGray
-            Start-Sleep -Milliseconds 150
-            Write-Host "  /desktop/core/keyring      IPC/Rust    SALUDABLE   1.2ms" -ForegroundColor Green
-            Start-Sleep -Milliseconds 150
-            Write-Host "  /backend/inventory/pos     HTTP/Java   200 OK      34.8ms" -ForegroundColor Green
-            Start-Sleep -Milliseconds 150
-            Write-Host "  /ai/rag/pgvector           FastAPI     200 OK      78.4ms" -ForegroundColor Green
-            Start-Sleep -Milliseconds 150
-            Write-Host "  /homelab/wireguard-mesh    P2P/UDP     ACTIVO      3.8ms" -ForegroundColor Green
-            Write-Host "  ------------------------------------------------------------------" -ForegroundColor DarkGray
-            Write-Host "  [STATUS] Disponibilidad: 99.9% | 0 fugas de memoria | Concurrencia optima" -ForegroundColor Green
-            Pause-Screen
-        }
-        elseif ($choice -eq "5") {
-            Show-Banner
-            Write-Host "=== CANALES DE CONTACTO DIRECTO ===" -ForegroundColor Cyan
-            Write-Host ""
-            Write-Host "  Email:    danvb.dev@gmail.com" -ForegroundColor Yellow
-            Write-Host "  GitHub:   https://github.com/Danvb15" -ForegroundColor Blue
-            Write-Host "  LinkedIn: https://linkedin.com/in/Danvb15" -ForegroundColor Cyan
-            Write-Host "  Origen:   Barranquilla, Atlantico (Colombia)" -ForegroundColor Magenta
-            Pause-Screen
-        }
-        elseif ($choice -eq "m" -or $choice -eq "M") {
-            if ($global:player -ne $null) {
-                Stop-BgMusic
-            } else {
-                Start-BgMusic
-            }
-        }
-        elseif ($choice -eq "0") {
-            $running = $false
-        }
+        Write-Host " 100% OK" -ForegroundColor Green
+        Write-Host ""
+        Start-Sleep -Milliseconds 500
+
+        $cycle++
     }
 } finally {
     Stop-BgMusic
     Write-Host ""
-    Write-Host "[TERMINAL SESSION TERMINATED] Gracias por visitar!" -ForegroundColor DarkGray
+    Write-Host "[STREAM DISCONNECTED] Sesion finalizada. Gracias por visitar!" -ForegroundColor DarkGray
     Write-Host ""
 }
