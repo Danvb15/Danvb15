@@ -1,0 +1,97 @@
+{
+  "developer": {
+    "name": "Daniel Elías Vásquez Barrios",
+    "handle": "danvb",
+    "title": "Software Engineer & Systems Architect",
+    "location": "Barranquilla, Atlántico (Colombia) 🇨🇴",
+    "contact": {
+      "email": "danvb.dev@gmail.com",
+      "github": "https://github.com/Danvb15",
+      "linkedin": "https://linkedin.com/in/Danvb15"
+    },
+    "philosophy": "Eliminar la complejidad innecesaria. Código limpio, arquitectura modular, 100% type safety y sistemas de alto rendimiento."
+  },
+  "engineering_pillars": [
+    "Diseño arquitectónico desacoplado y modular (Clean Architecture / DDD)",
+    "Transaccionalidad ACID estricta y concurrencia con bloqueo optimista",
+    "Custodia criptográfica en el OS Keyring nativo (0 secretos en texto plano)",
+    "Servicios de baja latencia (<150ms) con consumo eficiente de memoria",
+    "Infraestructura autónoma, virtualización con Proxmox VE y redes VPN seguras"
+  ],
+  "tech_stack": {
+    "languages": [
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "Java 21",
+      "Rust",
+      "SQL",
+      "Bash"
+    ],
+    "backend_and_apis": [
+      "Spring Boot 3",
+      "Node.js",
+      "Express",
+      "FastAPI (Python Async)",
+      "RESTful APIs",
+      "JWT & RBAC",
+      "Flyway Migrations"
+    ],
+    "frontend_and_ui": [
+      "React",
+      "Next.js",
+      "Astro",
+      "Vite",
+      "Tailwind CSS",
+      "Zustand",
+      "Framer Motion"
+    ],
+    "databases_and_cache": [
+      "PostgreSQL",
+      "MySQL",
+      "SQLite",
+      "Redis (Caché & Sesiones)",
+      "pgvector (Embeddings)",
+      "Prisma ORM"
+    ],
+    "desktop_and_mobile": [
+      "Tauri 2",
+      "React Native",
+      "Expo Router"
+    ],
+    "devops_and_infra": [
+      "Docker & Docker Compose",
+      "Linux (Debian / Ubuntu)",
+      "Proxmox VE (Hypervisor)",
+      "WireGuard & Tailscale",
+      "Git & GitHub Actions"
+    ]
+  },
+  "featured_projects": [
+    {
+      "name": "REMOTE MANAGER",
+      "domain": "Desktop Systems & Cryptography",
+      "stack": ["Rust", "Tauri 2", "React", "TypeScript", "SQLite", "OS Keyring"],
+      "highlight": "Custodia criptográfica nativa en Windows Credential Manager / Linux SecretService. Destrucción de secretos en RAM tras login."
+    },
+    {
+      "name": "TECHSTOCK",
+      "domain": "Distributed Multi-Tenant SaaS & POS",
+      "stack": ["Java 21", "Spring Boot 3", "PostgreSQL", "Flyway", "Expo React Native"],
+      "highlight": "Aislamiento estricto por inquilino, control de concurrencia optimista y registro inmutable de auditoría contable."
+    },
+    {
+      "name": "AI BUSINESS AGENT",
+      "domain": "Artificial Intelligence & Vector RAG",
+      "stack": ["FastAPI", "Python", "pgvector", "PostgreSQL", "Redis", "Claude API"],
+      "highlight": "Pipeline RAG asíncrono con búsqueda semántica vectorial de baja latencia y control estricto de alucinaciones."
+    },
+    {
+      "name": "HOMELAB & SECURE INFRASTRUCTURE",
+      "domain": "Virtualization, Networks & Self-Hosted",
+      "stack": ["Proxmox VE", "Linux", "Docker Compose", "WireGuard", "Tailscale"],
+      "highlight": "Segmentación LXC/VMs, orquestación de contenedores y red mallada cifrada punto a punto sin puertos expuestos a internet."
+    }
+  ],
+  "status": "Available for high-impact software engineering projects, system architecture & technical consulting."
+}

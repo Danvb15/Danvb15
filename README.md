@@ -39,40 +39,202 @@
 
 ---
 
-### 🧬 Ficha Técnica de Operador // Developer Specs
+### 🧬 Ficha Técnica de Operador // Interactive Cyberdeck & Skill Tree
+
+```bash
+[CYBERDECK v2.4 INITIALIZED] Operator: Daniel Vásquez [danvb] · Class: Systems Architect
+STATUS: ONLINE · CPU: OPTIMAL · THREAT LEVEL: READY FOR PRODUCTION
+```
+
+> *💡 Haz clic en los **Loadouts Operativos** o en el **Árbol de Habilidades** para inspeccionar perks, pasivas y equipamiento:*
+
+#### 🎯 Selector de Modos de Operación // Loadouts
+
+<details open>
+  <summary>🛡️ <strong>Loadout 01: Arquitecto Empresarial & Backend Crítico</strong></summary>
+  <br />
 
 ```yaml
-┌─────────────────────────────────────────────────────────────────────────────┐
-│  OPERATOR: Daniel Vásquez [danvb]             CLASS: SYSTEMS ARCHITECT      │
-├─────────────────────────────────────────────────────────────────────────────┤
-│  ATRIBUTOS DE INGENIERÍA:                                                   │
-│  • Arquitectura & Clean Code  : [████████████████████] 99%  [S-RANK]        │
-│  • Backend Concurrente & ACID : [██████████████████░░] 94%  [S-RANK]        │
-│  • Desktop Core & Rust/Tauri  : [████████████████░░░░] 85%  [A-RANK]        │
-│  • Pipelines IA Vectorial RAG : [█████████████████░░░] 88%  [A-RANK]        │
-│  • Infraestructura & Homelab  : [█████████████████░░░] 90%  [A-RANK]        │
-│  • Ingesta de Café Diario     : [████████████████████] 100% [OVERCLOCK]     │
-└─────────────────────────────────────────────────────────────────────────────┘
+configuracion:
+  rol_primario: "Backend Architect & Data Integrity Specialist"
+  enfoque: "Alta concurrencia sin carreras críticas, transacciones ACID y aislamiento multi-tenant."
+  stack_activo: ["Java 21", "Spring Boot 3", "PostgreSQL", "Flyway", "Redis", "Docker"]
+  perk_clave: "Optimistic Locking & Inmutable Audit Trail"
+  metrica_objetivo: "Disponibilidad 99.9% · Latencia transaccional <120ms"
 ```
+</details>
+
+<details>
+  <summary>🦀 <strong>Loadout 02: Ingeniero Low-Level, Desktop & Criptografía</strong></summary>
+  <br />
+
+```yaml
+configuracion:
+  rol_primario: "Systems & Native Desktop Engineer"
+  enfoque: "Software ultraligero de alto rendimiento con custodia segura de credenciales."
+  stack_activo: ["Rust", "Tauri 2", "React / TypeScript", "SQLite", "OS Keyring", "SSH/RDP"]
+  perk_clave: "Zero Plaintext Secrets (Custodia en Windows Credential Manager / Linux SecretService)"
+  metrica_objetivo: "Consumo de RAM <35MB · 0 fugas de memoria en sesiones prolongadas"
+```
+</details>
+
+<details>
+  <summary>🤖 <strong>Loadout 03: Agentes de Inteligencia Artificial & Fullstack Moderno</strong></summary>
+  <br />
+
+```yaml
+configuracion:
+  rol_primario: "AI Solutions Engineer & Modern Web Architect"
+  enfoque: "Automatización de flujos con recuperación semántica precisa (RAG) e interfaces sub-100ms."
+  stack_activo: ["FastAPI (Python)", "pgvector", "Claude API", "Next.js / Astro", "Tailwind CSS"]
+  perk_clave: "Vector Context Retrieval con mitigación estricta de alucinaciones"
+  metrica_objetivo: "Respuestas contextuales en streaming con validación tipada Pydantic"
+```
+</details>
+
+<br />
+
+#### 📊 Árbol de Habilidades & Perks Especiales
+
+<table>
+  <tr>
+    <th width="35%">Atributo / Habilidad</th>
+    <th width="25%">Nivel / Maestría</th>
+    <th width="40%">Inspeccionar Perk</th>
+  </tr>
+  <tr>
+    <td><strong>🏛️ Arquitectura & Clean Code</strong></td>
+    <td><code>[██████████] 99% S-RANK</code></td>
+    <td>
+      <details>
+        <summary>🔍 <em>Ver perks</em></summary>
+        <ul>
+          <li><strong>Pasiva:</strong> <em>Zero Spaghetti</em> — Inmunidad al acoplamiento severo.</li>
+          <li><strong>Efecto:</strong> Código modular estructurado para escalar sin refactors dolorosos.</li>
+          <li><strong>Arsenal:</strong> Clean Architecture, DDD, 100% Type Safety.</li>
+        </ul>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>⚙️ Backend & Transaccionalidad</strong></td>
+    <td><code>[█████████░] 94% S-RANK</code></td>
+    <td>
+      <details>
+        <summary>🔍 <em>Ver perks</em></summary>
+        <ul>
+          <li><strong>Pasiva:</strong> <em>ACID Guardian</em> — Cero inconsistencias en ventas masivas simultáneas.</li>
+          <li><strong>Efecto:</strong> Pools de conexiones afinados con tiempo de respuesta mínimo.</li>
+          <li><strong>Arsenal:</strong> Spring Boot, PostgreSQL, Redis, Flyway Migrations.</li>
+        </ul>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>🦀 Desktop Nativo & Rust</strong></td>
+    <td><code>[████████░░] 85% A-RANK</code></td>
+    <td>
+      <details>
+        <summary>🔍 <em>Ver perks</em></summary>
+        <ul>
+          <li><strong>Pasiva:</strong> <em>Memory Safety</em> — Manejo de memoria seguro sin Garbage Collector.</li>
+          <li><strong>Efecto:</strong> Destrucción de secretos criptográficos en RAM tras el login.</li>
+          <li><strong>Arsenal:</strong> Rust, Tauri 2, OS Keyring, SQLite embebido.</li>
+        </ul>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>🧠 IA Vectorial & RAG</strong></td>
+    <td><code>[█████████░] 88% A-RANK</code></td>
+    <td>
+      <details>
+        <summary>🔍 <em>Ver perks</em></summary>
+        <ul>
+          <li><strong>Pasiva:</strong> <em>Hallucination Suppressor</em> — Contexto estructurado delimitado.</li>
+          <li><strong>Efecto:</strong> Búsqueda por similitud de cosenos en pgvector en milisegundos.</li>
+          <li><strong>Arsenal:</strong> FastAPI Asíncrono, pgvector, Claude API, Redis.</li>
+        </ul>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>🛡️ Infraestructura & Homelab</strong></td>
+    <td><code>[█████████░] 90% A-RANK</code></td>
+    <td>
+      <details>
+        <summary>🔍 <em>Ver perks</em></summary>
+        <ul>
+          <li><strong>Pasiva:</strong> <em>Zero Open Ports</em> — Acceso remoto cifrado sin exponer puertos a internet.</li>
+          <li><strong>Efecto:</strong> Aislamiento total de entornos con LXC y Máquinas Virtuales.</li>
+          <li><strong>Arsenal:</strong> Proxmox VE, Docker Compose, WireGuard, Tailscale, Linux.</li>
+        </ul>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>☕ Nivel de Cafeína</strong></td>
+    <td><code>[██████████] 100% OVERCLOCK</code></td>
+    <td>
+      <details>
+        <summary>🔍 <em>Ver perks</em></summary>
+        <ul>
+          <li><strong>Pasiva:</strong> <em>Hyperfocus State</em> — Inmunidad a la fatiga nocturna de debugging.</li>
+          <li><strong>Efecto:</strong> +50% velocidad de tipeo, +100% paciencia ante errores crípticos.</li>
+          <li><strong>Combustible:</strong> Café de especialidad colombiano 🇨🇴.</li>
+        </ul>
+      </details>
+    </td>
+  </tr>
+</table>
 
 ---
 
-### 🎮 Terminal Interactiva // CLI Simulator & Misión
+### 💻 Terminal de Ingeniería // Live CLI & Observability
 
-> *Haz clic en cualquiera de los comandos para interactuar:*
+```bash
+# ⚡ EJECUTA ESTO EN TU TERMINAL (Linux / macOS / PowerShell):
+curl -sL https://raw.githubusercontent.com/Danvb15/Danvb15/main/danvb.json
+```
+> *💡 El comando anterior es **100% real**: descarga e imprime mi perfil completo, arquitectura y datos de contacto formateados en tu consola.*
+
+---
+
+```
+╭─ 🔴 🟡 🟢 ──────────────── daniel@workstation: ~ (zsh / starship) ────────────────╮
+│ ➜  ~ danvb --version                                                             │
+│ danvb-cli v2.4.0-release (target: x86_64-unknown-linux-gnu, commit: 945a713)   │
+╰──────────────────────────────────────────────────────────────────────────────────╯
+```
 
 <details open>
-  <summary><strong>▶ <code>danvb status --live</code></strong> (Estado actual & objetivos)</summary>
+  <summary><strong>▶ <code>danvb benchmark --target "production"</code></strong> (Telemetría de rendimiento y latencias)</summary>
   <br />
 
 ```bash
-[SYSTEM DIAGNOSTIC]
-• Engineer     : Daniel Elías Vásquez Barrios (danvb)
-• Current Role : Software Engineer & Full Stack Architect
-• Environment  : Linux / Windows / Proxmox VE
-• Focus Area   : Backends Concurridos, Desktop Nativo (Rust) & Agentes IA (RAG)
-• Objectives   : Construir sistemas escalables con latencias mínimas (<150ms)
-• Mindset      : "Eliminar la complejidad accidental. Código mantenible y tipado estricto."
+[INFO] Iniciando benchmark de capas de datos y microservicios...
+----------------------------------------------------------------------------------
+SUBSISTEMA                 PROTOCOLO   ESTADO      LATENCIA (p99)   MEMORIA
+/desktop/core/keyring      IPC/Rust    SALUDABLE      1.2ms          28 MB
+/backend/inventory/pos     HTTP/Java   200 OK        34.8ms         180 MB
+/ai/rag/pgvector           FastAPI     200 OK        78.4ms          95 MB
+/homelab/wireguard-mesh    P2P/UDP     ACTIVO         3.8ms           8 MB
+----------------------------------------------------------------------------------
+[METRICAS] 0 memory leaks · Integridad ACID: 100% · Uptime global: 99.9%
+```
+</details>
+
+<details>
+  <summary><strong>▶ <code>danvb sysinfo --telemetry</code></strong> (Especificaciones del nodo de desarrollo)</summary>
+  <br />
+
+```bash
+[NODE SPECIFICATIONS]
+• OS / Kernel    : Linux (Debian Core) & Proxmox Virtual Environment
+• Architecture   : x86_64 / Concurrencia con subprocesos y workers asíncronos
+• Toolchains     : Rust (rustc 1.80+), OpenJDK 21 LTS, Python 3.12+, Node.js 20 LTS
+• Security Layer : OS Keyring (Native Vault) · Redes cifradas WireGuard P2P
+• Primary Goal   : Construir software resiliente, escalable y sin sobrecostes cognitivos
 ```
 </details>
 
@@ -118,20 +280,6 @@
 </details>
 
 <details>
-  <summary><strong>▶ <code>danvb stack --breakdown</code></strong> (Racional técnico de herramientas)</summary>
-  <br />
-
-```yaml
-racional_tecnologico:
-  rust_tauri: "Aislamiento criptográfico en OS Keyring y consumo de memoria sub-30MB en escritorio."
-  java_spring_boot: "Transaccionalidad ACID rigurosa, pools JDBC afinados y arquitecturas multi-tenant."
-  fastapi_python: "Rutas asíncronas de alta velocidad para pipelines vectoriales (pgvector / RAG)."
-  react_typescript: "Interfaces predecibles con 100% type safety y component systems modulares."
-  docker_proxmox: "Entornos totalmente reproducibles y segmentación segura en redes privadas."
-```
-</details>
-
-<details>
   <summary><strong>▶ <code>danvb infra --topology</code></strong> (Mapa del Laboratorio Self-Hosted)</summary>
   <br />
 
@@ -146,21 +294,6 @@ racional_tecnologico:
 ├──────────────────────────────┴──────────────────────────────┤
 │   NETWORK MESH: WireGuard P2P + Tailscale (Zero Open Ports) │
 └─────────────────────────────────────────────────────────────┘
-```
-</details>
-
-<details>
-  <summary><strong>▶ <code>danvb contact --quick</code></strong> (Comandos directos)</summary>
-  <br />
-
-```bash
-$ curl -s https://danvb.dev/contact.json
-{
-  "email": "danvb.dev@gmail.com",
-  "github": "https://github.com/Danvb15",
-  "linkedin": "https://linkedin.com/in/Danvb15",
-  "location": "Barranquilla, Atlántico (Colombia) 🇨🇴"
-}
 ```
 </details>
 
