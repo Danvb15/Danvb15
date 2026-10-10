@@ -1,69 +1,69 @@
-<svg width="495" height="210" viewBox="0 0 495 210" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="langTitleId">
+<svg width="540" height="210" viewBox="0 0 540 210" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="langTitleId">
   <title id="langTitleId">Lenguajes Más Usados (27 Repositorios Públicos + Privados)</title>
   <style>
-    .header { font: 600 17px 'Segoe UI', Ubuntu, Sans-Serif; fill: #60A5FA; }
+    .header { font: 700 16.5px 'Segoe UI', Ubuntu, Sans-Serif; fill: #60A5FA; }
     .sub { font: 400 11.5px 'Segoe UI', Ubuntu, Sans-Serif; fill: #64748B; }
     .lang-name { font: 600 12.5px 'Segoe UI', Ubuntu, Sans-Serif; fill: #E2E8F0; }
     .lang-pct { font: 400 12px 'Segoe UI', Ubuntu, Mono, Sans-Serif; fill: #94A3B8; }
   </style>
 
   <!-- Card Background -->
-  <rect x="1" y="1" width="493" height="208" rx="12" fill="#0D1117" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="1" y="1" width="538" height="208" rx="12" fill="#0D1117" stroke="#1E293B" stroke-width="1.5"/>
 
   <!-- Header -->
-  <text x="25" y="34" class="header">Lenguajes Más Usados (27 Repositorios)</text>
-  <text x="25" y="52" class="sub">Distribución real de código en repositorios públicos y privados (5.54 MB)</text>
+  <text x="24" y="34" class="header">Lenguajes Más Usados (27 Repositorios)</text>
+  <text x="24" y="52" class="sub">Distribución real de código en repositorios públicos y privados (5.54 MB)</text>
 
   <!-- Multi-segment Progress Bar (Clipped to rounded rect) -->
   <defs>
     <clipPath id="barClip">
-      <rect x="25" y="68" width="445" height="12" rx="6"/>
+      <rect x="24" y="68" width="492" height="12" rx="6"/>
     </clipPath>
   </defs>
   <g clip-path="url(#barClip)">
-    <rect x="25" y="68" width="282" height="12" fill="#3178C6"/>
-    <rect x="307" y="68" width="75" height="12" fill="#FF5A03"/>
-    <rect x="382" y="68" width="50" height="12" fill="#F1E05A"/>
-    <rect x="432" y="68" width="15" height="12" fill="#3572A5"/>
-    <rect x="447" y="68" width="12" height="12" fill="#DEA584"/>
-    <rect x="459" y="68" width="8" height="12" fill="#B07219"/>
-    <rect x="467" y="68" width="3" height="12" fill="#89E051"/>
+    <rect x="24" y="68" width="312" height="12" fill="#3178C6"/>
+    <rect x="336" y="68" width="83" height="12" fill="#FF5A03"/>
+    <rect x="419" y="68" width="56" height="12" fill="#F1E05A"/>
+    <rect x="475" y="68" width="17" height="12" fill="#3572A5"/>
+    <rect x="492" y="68" width="13" height="12" fill="#DEA584"/>
+    <rect x="505" y="68" width="8" height="12" fill="#B07219"/>
+    <rect x="513" y="68" width="3" height="12" fill="#89E051"/>
   </g>
 
   <!-- Left Column Languages -->
-  <g transform="translate(25, 106)">
+  <g transform="translate(24, 108)">
     <circle cx="6" cy="-4" r="5" fill="#3178C6"/>
     <text x="18" y="0" class="lang-name">TypeScript</text>
-    <text x="105" y="0" class="lang-pct">63.47% (3.51 MB)</text>
+    <text x="110" y="0" class="lang-pct">63.47% (3.51 MB)</text>
   </g>
-  <g transform="translate(25, 132)">
+  <g transform="translate(24, 134)">
     <circle cx="6" cy="-4" r="5" fill="#F1E05A"/>
     <text x="18" y="0" class="lang-name">JavaScript</text>
-    <text x="105" y="0" class="lang-pct">11.30% (625 KB)</text>
+    <text x="110" y="0" class="lang-pct">11.30% (625 KB)</text>
   </g>
-  <g transform="translate(25, 158)">
+  <g transform="translate(24, 160)">
     <circle cx="6" cy="-4" r="5" fill="#DEA584"/>
     <text x="18" y="0" class="lang-name">Rust</text>
-    <text x="105" y="0" class="lang-pct">2.65% (146 KB)</text>
+    <text x="110" y="0" class="lang-pct">2.65% (146 KB)</text>
   </g>
-  <g transform="translate(25, 184)">
+  <g transform="translate(24, 186)">
     <circle cx="6" cy="-4" r="5" fill="#89E051"/>
     <text x="18" y="0" class="lang-name">Shell / PS1</text>
-    <text x="105" y="0" class="lang-pct">0.50% (36 KB)</text>
+    <text x="110" y="0" class="lang-pct">0.50% (36 KB)</text>
   </g>
 
   <!-- Right Column Languages -->
-  <g transform="translate(260, 106)">
+  <g transform="translate(285, 108)">
     <circle cx="6" cy="-4" r="5" fill="#FF5A03"/>
     <text x="18" y="0" class="lang-name">Astro</text>
     <text x="95" y="0" class="lang-pct">16.94% (938 KB)</text>
   </g>
-  <g transform="translate(260, 132)">
+  <g transform="translate(285, 134)">
     <circle cx="6" cy="-4" r="5" fill="#3572A5"/>
     <text x="18" y="0" class="lang-name">Python</text>
     <text x="95" y="0" class="lang-pct">3.44% (190 KB)</text>
   </g>
-  <g transform="translate(260, 158)">
+  <g transform="translate(285, 160)">
     <circle cx="6" cy="-4" r="5" fill="#B07219"/>
     <text x="18" y="0" class="lang-name">Java</text>
     <text x="95" y="0" class="lang-pct">1.70% (94 KB)</text>

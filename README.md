@@ -354,13 +354,13 @@ SUBSYSTEM         PROTO    STATUS    p99 LATENCY
 
 <div align="center">
   <p align="center">
-    <img src="./github-stats-real.svg" alt="GitHub Stats (Public + Private)" width="100%" style="max-width: 495px;" />
+    <img src="./github-stats-real.svg" alt="GitHub Stats (Public + Private)" width="100%" style="max-width: 540px;" />
   </p>
   <p align="center">
-    <img src="./top-langs-real.svg" alt="Top Languages (27 Repositories)" width="100%" style="max-width: 495px;" />
+    <img src="./top-langs-real.svg" alt="Top Languages (27 Repositories)" width="100%" style="max-width: 540px;" />
   </p>
   <p align="center">
-    <img src="https://streak-stats.demolab.com/?user=Danvb15&theme=tokyonight&hide_border=true&border_radius=12&background=0D1117&ring=60A5FA&fire=38BDF8&currStreakLabel=60A5FA" alt="Streak Stats" width="100%" style="max-width: 495px;" />
+    <img src="https://streak-stats.demolab.com/?user=Danvb15&theme=tokyonight&hide_border=true&border_radius=12&background=0D1117&ring=60A5FA&fire=38BDF8&currStreakLabel=60A5FA" alt="Streak Stats" width="100%" style="max-width: 540px;" />
   </p>
 </div>
 
