@@ -354,13 +354,13 @@ SUBSYSTEM         PROTO    STATUS    p99 LATENCY
 
 <div align="center">
   <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=Danvb15&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0D1117&title_color=60A5FA&text_color=9CA3AF&icon_color=38BDF8" alt="GitHub Stats" width="100%" style="max-width: 460px;" />
+    <img src="./github-stats-real.svg" alt="GitHub Stats (Public + Private)" width="100%" style="max-width: 495px;" />
   </p>
   <p align="center">
-    <img src="https://streak-stats.demolab.com/?user=Danvb15&theme=tokyonight&hide_border=true&border_radius=12&background=0D1117&ring=60A5FA&fire=38BDF8&currStreakLabel=60A5FA" alt="Streak Stats" width="100%" style="max-width: 460px;" />
+    <img src="./top-langs-real.svg" alt="Top Languages (27 Repositories)" width="100%" style="max-width: 495px;" />
   </p>
   <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Danvb15&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0D1117&title_color=60A5FA&text_color=9CA3AF" alt="Top Languages" width="100%" style="max-width: 460px;" />
+    <img src="https://streak-stats.demolab.com/?user=Danvb15&theme=tokyonight&hide_border=true&border_radius=12&background=0D1117&ring=60A5FA&fire=38BDF8&currStreakLabel=60A5FA" alt="Streak Stats" width="100%" style="max-width: 495px;" />
   </p>
 </div>
 
@@ -369,11 +369,11 @@ SUBSYSTEM         PROTO    STATUS    p99 LATENCY
 ### 🎧 Coding Vibe // Frecuencia de Enfoque
 
 ```bash
-╭──────────────────────────────────────────╮
-│ ♫ NOW PLAYING: Synthwave Ambient Stream  │
-│ [████████████████░░░░░░░░] 03:14 / 04:45 │
-│ ⚡ Focus: 100% · Status: Shipping Code   │
-╰──────────────────────────────────────────╯
+╭────────────────────────────────────────────────────────╮
+│ ♫ NOW PLAYING: Mac Quayle - 1.0_8-whatsyourask.m4p     │
+│ [████████████████░░░░░░░░] 01:42 / 02:15 (Mr. Robot)   │
+│ ⚡ Focus: 100% · Status: Shipping Code                 │
+╰────────────────────────────────────────────────────────╯
 ```
 
 ---

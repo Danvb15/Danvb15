@@ -93,10 +93,11 @@ try {
         Stream-Line -Text "     Virtualizacion segmentada, nubes privadas y redes malladas seguras." -Color DarkGray -DelayMs 1000
         Write-Host ""
 
-        Stream-Line -Text "--- [ OBSERVABILIDAD & ESTADO DE SALUD DEL NODO ] -------------------" -Color Yellow -DelayMs 800
+        Stream-Line -Text "--- [ METRICAS REALES GITHUB & OBSERVABILIDAD ] ---------------------" -Color Yellow -DelayMs 800
+        Stream-Line -Text "  Repositorios & Commits   : 27 Repos (22 Priv / 5 Pub) | 359 Contribuciones" -Color Green -DelayMs 600
+        Stream-Line -Text "  Top Lenguajes (5.54 MB)  : TS 63.5% | Astro 16.9% | JS 11.3% | Py 3.4% | Rust 2.7%" -Color Cyan -DelayMs 600
         Stream-Line -Text "  Desktop Memory Footprint : [####----------------] 28.4 MB (Tauri 2 / Rust Core)" -Color Cyan -DelayMs 600
         Stream-Line -Text "  Pool Connection Health   : [####################] 100% ACID Integrity (No Leaks)" -Color Green -DelayMs 600
-        Stream-Line -Text "  Uptime de Disponibilidad : [####################] 99.9% Production Ready" -Color Green -DelayMs 600
         Stream-Line -Text "  Canal de Comunicacion    : danvb.dev@gmail.com | https://linkedin.com/in/Danvb15" -Color White -DelayMs 1000
         Write-Host ""
 

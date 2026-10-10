@@ -1,0 +1,69 @@
+<svg width="495" height="215" viewBox="0 0 495 215" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="titleId">
+  <title id="titleId">Daniel Vásquez (Danvb15) — Estadísticas Reales de GitHub (Públicas + Privadas)</title>
+  <style>
+    .header { font: 600 17px 'Segoe UI', Ubuntu, Sans-Serif; fill: #60A5FA; }
+    .sub { font: 400 11.5px 'Segoe UI', Ubuntu, Sans-Serif; fill: #64748B; }
+    .stat-label { font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #9CA3AF; }
+    .stat-val { font: 700 13.5px 'Segoe UI', Ubuntu, Mono, Sans-Serif; fill: #F8FAFC; }
+    .stat-meta { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #38BDF8; }
+    .rank-text { font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #38BDF8; }
+    .rank-sub { font: 600 10px 'Segoe UI', Ubuntu, Sans-Serif; fill: #94A3B8; letter-spacing: 0.8px; }
+    @keyframes ringPulse {
+      0% { stroke-dashoffset: 251; }
+      100% { stroke-dashoffset: 35; }
+    }
+    .rank-ring {
+      stroke-dasharray: 251;
+      stroke-dashoffset: 35;
+      animation: ringPulse 1.4s ease-out forwards;
+      transform: rotate(-90deg);
+      transform-origin: 410px 115px;
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect x="1" y="1" width="493" height="213" rx="12" fill="#0D1117" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="25" y="34" class="header">Daniel Vásquez — GitHub Stats (Full Telemetry)</text>
+  <text x="25" y="52" class="sub">Incluye actividad verificada en repositorios públicos y privados (GraphQL)</text>
+  <line x1="25" y1="64" x2="470" y2="64" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Row 1: Total Contributions -->
+  <g transform="translate(25, 88)">
+    <circle cx="8" cy="-4" r="4.5" fill="#38BDF8"/>
+    <text x="22" y="0" class="stat-label">Total Contribuciones:</text>
+    <text x="172" y="0" class="stat-val">359</text>
+    <text x="206" y="0" class="stat-meta">(304 privadas · 55 públicas)</text>
+  </g>
+
+  <!-- Row 2: Total Repositories -->
+  <g transform="translate(25, 116)">
+    <circle cx="8" cy="-4" r="4.5" fill="#60A5FA"/>
+    <text x="22" y="0" class="stat-label">Repositorios Propios:</text>
+    <text x="172" y="0" class="stat-val">27</text>
+    <text x="198" y="0" class="stat-meta">(22 privados · 5 públicos)</text>
+  </g>
+
+  <!-- Row 3: Active Days & Max Peak -->
+  <g transform="translate(25, 144)">
+    <circle cx="8" cy="-4" r="4.5" fill="#34D399"/>
+    <text x="22" y="0" class="stat-label">Días Activos / Racha:</text>
+    <text x="172" y="0" class="stat-val">83 días</text>
+    <text x="226" y="0" class="stat-meta">(Racha máx: 11d · Pico: 18/día)</text>
+  </g>
+
+  <!-- Row 4: Codebase Volume -->
+  <g transform="translate(25, 172)">
+    <circle cx="8" cy="-4" r="4.5" fill="#A78BFA"/>
+    <text x="22" y="0" class="stat-label">Volumen de Código:</text>
+    <text x="172" y="0" class="stat-val">5.81 MB</text>
+    <text x="232" y="0" class="stat-meta">(13 proyectos en TypeScript)</text>
+  </g>
+
+  <!-- Right Side Rank Ring -->
+  <circle cx="410" cy="126" r="40" stroke="#1E293B" stroke-width="6" fill="none"/>
+  <circle cx="410" cy="126" r="40" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" fill="none" class="rank-ring"/>
+  <text x="410" y="131" text-anchor="middle" class="rank-text">A+</text>
+  <text x="410" y="150" text-anchor="middle" class="rank-sub">ACTIVE</text>
+</svg>

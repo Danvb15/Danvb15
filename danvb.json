@@ -93,5 +93,26 @@
       "highlight": "Segmentación LXC/VMs, orquestación de contenedores y red mallada cifrada punto a punto sin puertos expuestos a internet."
     }
   ],
+  "github_telemetry": {
+    "total_repositories": 27,
+    "private_repositories": 22,
+    "public_repositories": 5,
+    "total_contributions_year": 359,
+    "private_contributions": 304,
+    "public_contributions": 55,
+    "active_coding_days": 83,
+    "longest_streak_days": 11,
+    "max_daily_contributions": 18,
+    "codebase_volume": "5.81 MB",
+    "top_languages_distribution": {
+      "TypeScript": "63.47%",
+      "Astro": "16.94%",
+      "JavaScript": "11.30%",
+      "Python": "3.44%",
+      "Rust": "2.65%",
+      "Java": "1.70%",
+      "Shell_PowerShell": "0.50%"
+    }
+  },
   "status": "Available for high-impact software engineering projects, system architecture & technical consulting."
 }

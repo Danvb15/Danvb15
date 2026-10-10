@@ -119,10 +119,11 @@ while true; do
   stream_line "     Virtualización segmentada, nubes privadas y redes malladas seguras." 1.0
   echo ""
 
-  stream_line "${BOLD}${YELLOW}--- [ OBSERVABILIDAD & ESTADO DE SALUD DEL NODO ] -------------------${RESET}" 0.8
+  stream_line "${BOLD}${YELLOW}--- [ MÉTRICAS REALES GITHUB & OBSERVABILIDAD ] ---------------------${RESET}" 0.8
+  stream_line "  Repositorios & Commits   : ${GREEN}27 Repos (22 Priv / 5 Pub)  ·  359 Contribuciones${RESET}" 0.6
+  stream_line "  Top Lenguajes (5.54 MB)  : ${CYAN}TS 63.5% · Astro 16.9% · JS 11.3% · Py 3.4% · Rust 2.7%${RESET}" 0.6
   stream_line "  Desktop Memory Footprint : ${CYAN}[████░░░░░░░░░░░░░░░░]${RESET} 28.4 MB (Tauri 2 / Rust Core)" 0.6
   stream_line "  Pool Connection Health   : ${GREEN}[████████████████████]${RESET} 100% ACID Integrity (No Leaks)" 0.6
-  stream_line "  Uptime de Disponibilidad : ${GREEN}[████████████████████]${RESET} 99.9% Production Ready" 0.6
   stream_line "  Canal de Comunicación    : ${WHITE}danvb.dev@gmail.com  ·  https://linkedin.com/in/Danvb15${RESET}" 1.0
   echo ""
 
