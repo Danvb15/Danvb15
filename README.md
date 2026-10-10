@@ -1,24 +1,26 @@
 <div align="center">
 
-  <!-- Header Cinematográfico con Ondas Fluidas Animadas -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,70:1E293B,100:3B82F6&height=220&section=header&text=DANIEL%20VASQUEZ&fontSize=44&fontColor=60A5FA&fontAlignY=38&desc=Software%20Engineer%20%E2%80%A2%20Systems%20Architect%20%E2%80%A2%20High%20Performance%20Builder&descSize=16&descAlignY=58&descAlign=50" width="100%" alt="Daniel Vasquez Banner" />
+  <!-- Header Cinematográfico con Ondas Fluidas (100% Responsive) -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,70:1E293B,100:3B82F6&height=200&section=header&text=DANIEL%20VASQUEZ&fontSize=38&fontColor=60A5FA&fontAlignY=38&desc=Software%20Engineer%20%E2%80%A2%20Systems%20Architect&descSize=14&descAlignY=58&descAlign=50" width="100%" alt="Daniel Vasquez Banner" />
 
-  <!-- Máquina de Escribir Dinámica -->
-  <a href="https://github.com/Danvb15">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=1000&color=60A5FA&center=true&vCenter=true&width=650&lines=%C2%A1Hola!+Soy+Daniel+V%C3%A1squez+%F0%9F%91%8B;Software+Engineer+%26+Systems+Builder+%E2%9A%A1;Rust+%7C+Java+%7C+Python+%7C+TypeScript+%7C+Linux;Clean+Architecture%2C+Type+Safety+%26+Performance+%F0%9F%9B%A1%EF%B8%8F;Convertidor+de+caf%C3%A9+en+c%C3%B3digo+escalable+%E2%98%95%F0%9F%92%BB" alt="Typing SVG" />
-  </a>
-
-  <p align="center">
-    📍 Barranquilla, Atlántico (Colombia) 🇨🇴
-  </p>
-
-  <!-- Badges de Estado y Enfoque -->
+  <!-- Máquina de Escribir Dinámica (Escalable para Móviles) -->
   <p align="center">
     <a href="https://github.com/Danvb15">
-      <img src="https://komarev.com/ghpvc/?username=Danvb15&color=3b82f6&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3000&pause=1000&color=60A5FA&center=true&vCenter=true&width=500&lines=%C2%A1Hola!+Soy+Daniel+V%C3%A1squez+%F0%9F%91%8B;Software+Engineer+%26+Systems+Builder+%E2%9A%A1;Rust+%7C+Java+%7C+Python+%7C+TypeScript;Clean+Architecture+%26+High+Performance;Convertidor+de+caf%C3%A9+en+c%C3%B3digo+limpio+%E2%98%95" alt="Typing SVG" />
     </a>
-    <img src="https://img.shields.io/badge/Status-Building%20%26%20Shipping-22c55e?style=flat-square" alt="Status" />
-    <img src="https://img.shields.io/badge/Enfoque-Clean%20Code%20%26%20Security-6366f1?style=flat-square" alt="Focus" />
+  </p>
+
+  <p align="center">
+    📍 <strong>Barranquilla, Atlántico (Colombia) 🇨🇴</strong>
+  </p>
+
+  <!-- Badges de Estado y Métricas -->
+  <p align="center">
+    <a href="https://github.com/Danvb15">
+      <img src="https://komarev.com/ghpvc/?username=Danvb15&color=3b82f6&style=flat-square&label=VISTAS" alt="Profile Views" />
+    </a>
+    <img src="https://img.shields.io/badge/Status-Shipping%20Code-22c55e?style=flat-square" alt="Status" />
+    <img src="https://img.shields.io/badge/Clean%20Code-Security-6366f1?style=flat-square" alt="Focus" />
     <img src="https://img.shields.io/badge/Type%20Safety-100%25-blue?style=flat-square" alt="Type Safety" />
   </p>
 
@@ -31,7 +33,7 @@
       <img src="https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
     <a href="https://github.com/Danvb15?tab=repositories">
-      <img src="https://img.shields.io/badge/Repositorios-Explorar-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repos" />
+      <img src="https://img.shields.io/badge/Repos-Explorar-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repos" />
     </a>
   </p>
 
@@ -42,11 +44,11 @@
 ### 🧬 Ficha Técnica de Operador // Interactive Cyberdeck & Skill Tree
 
 ```bash
-[CYBERDECK v2.4 INITIALIZED] Operator: Daniel Vásquez [danvb] · Class: Systems Architect
-STATUS: ONLINE · CPU: OPTIMAL · THREAT LEVEL: READY FOR PRODUCTION
+[CYBERDECK v2.4] Operator: Daniel Vásquez [danvb]
+Class: Systems Architect · Status: Production Ready
 ```
 
-> *💡 Haz clic en los **Loadouts Operativos** o en el **Árbol de Habilidades** para inspeccionar perks, pasivas y equipamiento:*
+> *💡 Toca cualquiera de los **Loadouts** o **Habilidades** para desplegar sus perks:*
 
 #### 🎯 Selector de Modos de Operación // Loadouts
 
@@ -56,11 +58,11 @@ STATUS: ONLINE · CPU: OPTIMAL · THREAT LEVEL: READY FOR PRODUCTION
 
 ```yaml
 configuracion:
-  rol_primario: "Backend Architect & Data Integrity Specialist"
-  enfoque: "Alta concurrencia sin carreras críticas, transacciones ACID y aislamiento multi-tenant."
-  stack_activo: ["Java 21", "Spring Boot 3", "PostgreSQL", "Flyway", "Redis", "Docker"]
+  rol: "Backend Architect & Data Integrity Specialist"
+  enfoque: "Alta concurrencia, transacciones ACID y multi-tenant."
+  stack: ["Java 21", "Spring Boot 3", "PostgreSQL", "Redis", "Docker"]
   perk_clave: "Optimistic Locking & Inmutable Audit Trail"
-  metrica_objetivo: "Disponibilidad 99.9% · Latencia transaccional <120ms"
+  metrica: "Disponibilidad 99.9% · Latencia transaccional <120ms"
 ```
 </details>
 
@@ -70,174 +72,135 @@ configuracion:
 
 ```yaml
 configuracion:
-  rol_primario: "Systems & Native Desktop Engineer"
-  enfoque: "Software ultraligero de alto rendimiento con custodia segura de credenciales."
-  stack_activo: ["Rust", "Tauri 2", "React / TypeScript", "SQLite", "OS Keyring", "SSH/RDP"]
-  perk_clave: "Zero Plaintext Secrets (Custodia en Windows Credential Manager / Linux SecretService)"
-  metrica_objetivo: "Consumo de RAM <35MB · 0 fugas de memoria en sesiones prolongadas"
+  rol: "Systems & Native Desktop Engineer"
+  enfoque: "Software ultraligero con custodia segura de credenciales."
+  stack: ["Rust", "Tauri 2", "React / TS", "SQLite", "OS Keyring"]
+  perk_clave: "0 Plaintext Secrets (Windows Credential / SecretService)"
+  metrica: "Consumo de RAM <35MB · 0 memory leaks"
 ```
 </details>
 
 <details>
-  <summary>🤖 <strong>Loadout 03: Agentes de Inteligencia Artificial & Fullstack Moderno</strong></summary>
+  <summary>🤖 <strong>Loadout 03: Agentes de Inteligencia Artificial & Fullstack</strong></summary>
   <br />
 
 ```yaml
 configuracion:
-  rol_primario: "AI Solutions Engineer & Modern Web Architect"
-  enfoque: "Automatización de flujos con recuperación semántica precisa (RAG) e interfaces sub-100ms."
-  stack_activo: ["FastAPI (Python)", "pgvector", "Claude API", "Next.js / Astro", "Tailwind CSS"]
-  perk_clave: "Vector Context Retrieval con mitigación estricta de alucinaciones"
-  metrica_objetivo: "Respuestas contextuales en streaming con validación tipada Pydantic"
+  rol: "AI Solutions Engineer & Modern Web Architect"
+  enfoque: "Automatización con recuperación vectorial (RAG) e interfaces sub-100ms."
+  stack: ["FastAPI (Python)", "pgvector", "Claude API", "Astro", "Tailwind"]
+  perk_clave: "Vector Context Retrieval con mitigación de alucinaciones"
+  metrica: "Streaming con esquemas fuertemente tipados en Pydantic"
 ```
 </details>
 
 <br />
 
-#### 📊 Árbol de Habilidades & Perks Especiales
+#### 📊 Árbol de Habilidades & Perks (Mobile-Friendly)
 
-<table>
-  <tr>
-    <th width="35%">Atributo / Habilidad</th>
-    <th width="25%">Nivel / Maestría</th>
-    <th width="40%">Inspeccionar Perk</th>
-  </tr>
-  <tr>
-    <td><strong>🏛️ Arquitectura & Clean Code</strong></td>
-    <td><code>[██████████] 99% S-RANK</code></td>
-    <td>
-      <details>
-        <summary>🔍 <em>Ver perks</em></summary>
-        <ul>
-          <li><strong>Pasiva:</strong> <em>Zero Spaghetti</em> — Inmunidad al acoplamiento severo.</li>
-          <li><strong>Efecto:</strong> Código modular estructurado para escalar sin refactors dolorosos.</li>
-          <li><strong>Arsenal:</strong> Clean Architecture, DDD, 100% Type Safety.</li>
-        </ul>
-      </details>
-    </td>
-  </tr>
-  <tr>
-    <td><strong>⚙️ Backend & Transaccionalidad</strong></td>
-    <td><code>[█████████░] 94% S-RANK</code></td>
-    <td>
-      <details>
-        <summary>🔍 <em>Ver perks</em></summary>
-        <ul>
-          <li><strong>Pasiva:</strong> <em>ACID Guardian</em> — Cero inconsistencias en ventas masivas simultáneas.</li>
-          <li><strong>Efecto:</strong> Pools de conexiones afinados con tiempo de respuesta mínimo.</li>
-          <li><strong>Arsenal:</strong> Spring Boot, PostgreSQL, Redis, Flyway Migrations.</li>
-        </ul>
-      </details>
-    </td>
-  </tr>
-  <tr>
-    <td><strong>🦀 Desktop Nativo & Rust</strong></td>
-    <td><code>[████████░░] 85% A-RANK</code></td>
-    <td>
-      <details>
-        <summary>🔍 <em>Ver perks</em></summary>
-        <ul>
-          <li><strong>Pasiva:</strong> <em>Memory Safety</em> — Manejo de memoria seguro sin Garbage Collector.</li>
-          <li><strong>Efecto:</strong> Destrucción de secretos criptográficos en RAM tras el login.</li>
-          <li><strong>Arsenal:</strong> Rust, Tauri 2, OS Keyring, SQLite embebido.</li>
-        </ul>
-      </details>
-    </td>
-  </tr>
-  <tr>
-    <td><strong>🧠 IA Vectorial & RAG</strong></td>
-    <td><code>[█████████░] 88% A-RANK</code></td>
-    <td>
-      <details>
-        <summary>🔍 <em>Ver perks</em></summary>
-        <ul>
-          <li><strong>Pasiva:</strong> <em>Hallucination Suppressor</em> — Contexto estructurado delimitado.</li>
-          <li><strong>Efecto:</strong> Búsqueda por similitud de cosenos en pgvector en milisegundos.</li>
-          <li><strong>Arsenal:</strong> FastAPI Asíncrono, pgvector, Claude API, Redis.</li>
-        </ul>
-      </details>
-    </td>
-  </tr>
-  <tr>
-    <td><strong>🛡️ Infraestructura & Homelab</strong></td>
-    <td><code>[█████████░] 90% A-RANK</code></td>
-    <td>
-      <details>
-        <summary>🔍 <em>Ver perks</em></summary>
-        <ul>
-          <li><strong>Pasiva:</strong> <em>Zero Open Ports</em> — Acceso remoto cifrado sin exponer puertos a internet.</li>
-          <li><strong>Efecto:</strong> Aislamiento total de entornos con LXC y Máquinas Virtuales.</li>
-          <li><strong>Arsenal:</strong> Proxmox VE, Docker Compose, WireGuard, Tailscale, Linux.</li>
-        </ul>
-      </details>
-    </td>
-  </tr>
-  <tr>
-    <td><strong>☕ Nivel de Cafeína</strong></td>
-    <td><code>[██████████] 100% OVERCLOCK</code></td>
-    <td>
-      <details>
-        <summary>🔍 <em>Ver perks</em></summary>
-        <ul>
-          <li><strong>Pasiva:</strong> <em>Hyperfocus State</em> — Inmunidad a la fatiga nocturna de debugging.</li>
-          <li><strong>Efecto:</strong> +50% velocidad de tipeo, +100% paciencia ante errores crípticos.</li>
-          <li><strong>Combustible:</strong> Café de especialidad colombiano 🇨🇴.</li>
-        </ul>
-      </details>
-    </td>
-  </tr>
-</table>
+<details open>
+  <summary><strong>🏛️ Arquitectura & Clean Code</strong> — <code>[99% S-RANK]</code></summary>
+  <blockquote>
+    <strong>• Pasiva:</strong> <em>Zero Spaghetti</em> — Inmunidad al acoplamiento severo.<br />
+    <strong>• Efecto:</strong> Código modular estructurado para escalar sin refactors dolorosos.<br />
+    <strong>• Arsenal:</strong> Clean Architecture, DDD, 100% Type Safety.
+  </blockquote>
+</details>
+
+<details>
+  <summary><strong>⚙️ Backend & Transaccionalidad</strong> — <code>[94% S-RANK]</code></summary>
+  <blockquote>
+    <strong>• Pasiva:</strong> <em>ACID Guardian</em> — Cero inconsistencias en ventas masivas simultáneas.<br />
+    <strong>• Efecto:</strong> Pools de conexiones afinados con tiempo de respuesta mínimo.<br />
+    <strong>• Arsenal:</strong> Spring Boot 3, PostgreSQL, Redis, Flyway Migrations.
+  </blockquote>
+</details>
+
+<details>
+  <summary><strong>🦀 Desktop Nativo & Rust</strong> — <code>[85% A-RANK]</code></summary>
+  <blockquote>
+    <strong>• Pasiva:</strong> <em>Memory Safety</em> — Manejo de memoria seguro sin Garbage Collector.<br />
+    <strong>• Efecto:</strong> Destrucción de secretos criptográficos en RAM tras el login.<br />
+    <strong>• Arsenal:</strong> Rust, Tauri 2, OS Keyring, SQLite embebido.
+  </blockquote>
+</details>
+
+<details>
+  <summary><strong>🧠 IA Vectorial & RAG</strong> — <code>[88% A-RANK]</code></summary>
+  <blockquote>
+    <strong>• Pasiva:</strong> <em>Hallucination Suppressor</em> — Contexto estructurado delimitado.<br />
+    <strong>• Efecto:</strong> Búsqueda por similitud de cosenos en pgvector en milisegundos.<br />
+    <strong>• Arsenal:</strong> FastAPI Asíncrono, pgvector, Claude API, Redis.
+  </blockquote>
+</details>
+
+<details>
+  <summary><strong>🛡️ Infraestructura & Homelab</strong> — <code>[90% A-RANK]</code></summary>
+  <blockquote>
+    <strong>• Pasiva:</strong> <em>Zero Open Ports</em> — Acceso remoto cifrado sin exponer puertos a internet.<br />
+    <strong>• Efecto:</strong> Aislamiento total de entornos con LXC y Máquinas Virtuales.<br />
+    <strong>• Arsenal:</strong> Proxmox VE, Docker Compose, WireGuard, Tailscale, Linux.
+  </blockquote>
+</details>
+
+<details>
+  <summary><strong>☕ Nivel de Cafeína</strong> — <code>[100% OVERCLOCK]</code></summary>
+  <blockquote>
+    <strong>• Pasiva:</strong> <em>Hyperfocus State</em> — Inmunidad a la fatiga nocturna de debugging.<br />
+    <strong>• Efecto:</strong> +50% velocidad de tipeo, +100% paciencia ante errores crípticos.<br />
+    <strong>• Combustible:</strong> Café de especialidad colombiano 🇨🇴.
+  </blockquote>
+</details>
 
 ---
 
 ### 💻 Terminal de Ingeniería // Live CLI & Cyberpunk Experience
 
 ```bash
-# ⚡ En Linux, macOS o Git Bash (Con colores ANSI y música de fondo):
+# ⚡ En Linux, macOS o Git Bash (Con colores y música):
 curl -sL https://raw.githubusercontent.com/Danvb15/Danvb15/main/danvb.sh | bash
 
-# ⚡ En Windows PowerShell (Con colores y música de fondo):
+# ⚡ En Windows PowerShell (Con colores y música):
 irm https://raw.githubusercontent.com/Danvb15/Danvb15/main/danvb.ps1 | iex
 ```
-> *💡 **100% Real e Interactivo:** Al ejecutar el comando en tu terminal, se abrirá una consola Cyberpunk interactiva a todo color, con música de fondo en loop (Synthwave), telemetría en vivo y navegación por teclado.*
+> *💡 **100% Real:** Al ejecutar el comando en tu terminal, se abre una consola interactiva Cyberpunk a todo color, con música de fondo en loop y telemetría de sistemas.*
 
 ---
 
 ```
-╭─ 🔴 🟡 🟢 ──────────────── daniel@workstation: ~ (zsh / starship) ────────────────╮
-│ ➜  ~ danvb --version                                                             │
-│ danvb-cli v2.4.0-release (target: x86_64-unknown-linux-gnu, commit: 945a713)   │
-╰──────────────────────────────────────────────────────────────────────────────────╯
+╭─ 🔴 🟡 🟢 ──── daniel@station ────╮
+│ ➜ danvb-cli v2.4 (x86_64-linux)   │
+╰───────────────────────────────────╯
 ```
 
 <details open>
-  <summary><strong>▶ <code>danvb benchmark --target "production"</code></strong> (Telemetría de rendimiento y latencias)</summary>
+  <summary><strong>▶ <code>danvb benchmark</code></strong> (Telemetría de rendimiento y latencias)</summary>
   <br />
 
 ```bash
-[INFO] Iniciando benchmark de capas de datos y microservicios...
-----------------------------------------------------------------------------------
-SUBSISTEMA                 PROTOCOLO   ESTADO      LATENCIA (p99)   MEMORIA
-/desktop/core/keyring      IPC/Rust    SALUDABLE      1.2ms          28 MB
-/backend/inventory/pos     HTTP/Java   200 OK        34.8ms         180 MB
-/ai/rag/pgvector           FastAPI     200 OK        78.4ms          95 MB
-/homelab/wireguard-mesh    P2P/UDP     ACTIVO         3.8ms           8 MB
-----------------------------------------------------------------------------------
-[METRICAS] 0 memory leaks · Integridad ACID: 100% · Uptime global: 99.9%
+[INFO] Benchmarking data layer & microservices...
+------------------------------------------------
+SUBSYSTEM         PROTO    STATUS    p99 LATENCY
+/core/keyring     Rust     SALUDABLE      1.2ms
+/inventory/pos    Java     200 OK        34.8ms
+/rag/pgvector     FastAPI  200 OK        78.4ms
+/wireguard-mesh   P2P/UDP  ACTIVO         3.8ms
+------------------------------------------------
+[STATUS] 0 memory leaks · Integridad ACID: 100%
 ```
 </details>
 
 <details>
-  <summary><strong>▶ <code>danvb sysinfo --telemetry</code></strong> (Especificaciones del nodo de desarrollo)</summary>
+  <summary><strong>▶ <code>danvb sysinfo</code></strong> (Especificaciones del nodo de desarrollo)</summary>
   <br />
 
 ```bash
 [NODE SPECIFICATIONS]
-• OS / Kernel    : Linux (Debian Core) & Proxmox Virtual Environment
-• Architecture   : x86_64 / Concurrencia con subprocesos y workers asíncronos
-• Toolchains     : Rust (rustc 1.80+), OpenJDK 21 LTS, Python 3.12+, Node.js 20 LTS
-• Security Layer : OS Keyring (Native Vault) · Redes cifradas WireGuard P2P
-• Primary Goal   : Construir software resiliente, escalable y sin sobrecostes cognitivos
+• OS / Kernel    : Linux Debian Core & Proxmox VE
+• Architecture   : x86_64 / Concurrencia asíncrona
+• Toolchains     : Rust, OpenJDK 21, Python 3.12, Node 20
+• Security Layer : OS Keyring · Redes WireGuard P2P
+• Primary Goal   : Construir software modular y mantenible
 ```
 </details>
 
@@ -283,20 +246,15 @@ SUBSISTEMA                 PROTOCOLO   ESTADO      LATENCIA (p99)   MEMORIA
 </details>
 
 <details>
-  <summary><strong>▶ <code>danvb infra --topology</code></strong> (Mapa del Laboratorio Self-Hosted)</summary>
+  <summary><strong>▶ <code>danvb infra</code></strong> (Topología de Red & Laboratorio Self-Hosted)</summary>
   <br />
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                   PROXMOX VE HYPERVISOR                     │
-├──────────────────────────────┬──────────────────────────────┤
-│   LXC Containers (Docker)    │   Virtual Machines (Linux)   │
-│   ├─ Nextcloud Private Cloud │   ├─ Debian Production Core  │
-│   ├─ Nginx Proxy Manager     │   └─ Hardened Staging Node   │
-│   └─ Microservices & APIs    │                              │
-├──────────────────────────────┴──────────────────────────────┤
-│   NETWORK MESH: WireGuard P2P + Tailscale (Zero Open Ports) │
-└─────────────────────────────────────────────────────────────┘
+┌── PROXMOX VE HYPERVISOR ───────────────┐
+│ ├─ LXC Containers (Docker & Services)  │
+│ ├─ Virtual Machines (Debian Core)      │
+│ └─ Mesh Network (WireGuard & Tailscale)│
+└────────────────────────────────────────┘
 ```
 </details>
 
@@ -308,28 +266,28 @@ SUBSISTEMA                 PROTOCOLO   ESTADO      LATENCIA (p99)   MEMORIA
 
   <p><strong>Lenguajes & Backend Core</strong></p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,js,py,java,rust,bash,nodejs,express,spring,fastapi&theme=dark" alt="Backend & Languages" />
+    <img src="https://skillicons.dev/icons?i=ts,js,py,java,rust,bash,nodejs,express,spring,fastapi&perline=5&theme=dark" alt="Backend & Languages" />
   </a>
 
   <br /><br />
 
   <p><strong>Frontend & UI Systems</strong></p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,nextjs,astro,vite,tailwind,html,css,redux&theme=dark" alt="Frontend & UI" />
+    <img src="https://skillicons.dev/icons?i=react,nextjs,astro,vite,tailwind,html,css,redux&perline=4&theme=dark" alt="Frontend & UI" />
   </a>
 
   <br /><br />
 
   <p><strong>Bases de Datos, Caché & Almacenamiento</strong></p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,redis,prisma&theme=dark" alt="Databases" />
+    <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,redis,prisma&perline=5&theme=dark" alt="Databases" />
   </a>
 
   <br /><br />
 
   <p><strong>Infraestructura, DevOps & Herramientas</strong></p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=docker,linux,git,github,postman,vscode,figma&theme=dark" alt="DevOps & Tools" />
+    <img src="https://skillicons.dev/icons?i=docker,linux,git,github,postman,vscode,figma&perline=4&theme=dark" alt="DevOps & Tools" />
   </a>
 
 </div>
@@ -338,48 +296,49 @@ SUBSISTEMA                 PROTOCOLO   ESTADO      LATENCIA (p99)   MEMORIA
 
 ### 🚀 Proyectos de Ingeniería Destacados
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🛡️ REMOTE MANAGER</h3>
-      <p><em>Administración Remota & Custodia Criptográfica</em></p>
-      <p>Software de escritorio multiplataforma de alto rendimiento para gestión centralizada de servidores SSH y RDP. Aísla credenciales en el <strong>OS Keyring nativo</strong> (0 contraseñas en texto plano).</p>
-      <p>
-        <img src="https://skillicons.dev/icons?i=rust,tauri,react,sqlite&theme=dark" alt="Tech Stack" />
-      </p>
-      <p><strong>Claves:</strong> IPC tipado Rust-React · Destrucción de secretos en RAM tras login</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>📦 TECHSTOCK</h3>
-      <p><em>Plataforma Multi-Tenant de Inventario & POS</em></p>
-      <p>Arquitectura distribuida para retail tecnológico. Concurrencia optimista para evitar sobreventas, auditoría transaccional inmutable y clientes multiplataforma (Web y Mobile).</p>
-      <p>
-        <img src="https://skillicons.dev/icons?i=java,spring,postgres,react&theme=dark" alt="Tech Stack" />
-      </p>
-      <p><strong>Claves:</strong> Multi-tenant estricto · Optimistic Locking · Auditoría inmutable</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🤖 AI BUSINESS AGENT</h3>
-      <p><em>Pipeline RAG & Memoria Semántica Vectorial</em></p>
-      <p>Agente inteligente corporativo con backend asíncrono para asistencia en flujos de trabajo empresariales y análisis de documentos contextuales con prevención de alucinaciones.</p>
-      <p>
-        <img src="https://skillicons.dev/icons?i=py,fastapi,postgres,redis&theme=dark" alt="Tech Stack" />
-      </p>
-      <p><strong>Claves:</strong> Búsqueda semántica vectorial (pgvector) · Caché Redis · Claude API</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🖥️ HOMELAB & INFRAESTRUCTURA SEGURA</h3>
-      <p><em>Virtualización, Contenedores & Redes Cifradas</em></p>
-      <p>Infraestructura self-hosted sobre Proxmox VE con segmentación entre VMs y contenedores LXC, servicios orquestados en Docker y redes malladas seguras sin puertos expuestos.</p>
-      <p>
-        <img src="https://skillicons.dev/icons?i=linux,docker,bash&theme=dark" alt="Tech Stack" />
-      </p>
-      <p><strong>Claves:</strong> Aislamiento de entornos · Túneles WireGuard / Tailscale · Nginx SSL</p>
-    </td>
-  </tr>
-</table>
+> *Casos de estudio enfocados en arquitectura sólida, alto rendimiento y seguridad:*
+
+#### 🛡️ 1. REMOTE MANAGER
+*Administración Remota & Custodia Criptográfica en OS Keyring*
+* Software de escritorio multiplataforma para administración centralizada de servidores SSH y RDP.
+* **Seguridad Crítica:** Aísla credenciales en el almacén de claves del sistema operativo (**OS Keyring nativo**) y destruye secretos en memoria RAM tras la autenticación (0 contraseñas en texto plano).
+* **Stack:**
+  <br />
+  <img src="https://skillicons.dev/icons?i=rust,tauri,react,sqlite&theme=dark" alt="Stack" />
+* **Destacado:** IPC tipado Rust-React · Consumo de memoria RAM sub-30MB en escritorio.
+
+---
+
+#### 📦 2. TECHSTOCK
+*Plataforma Distribuida Multi-Tenant de Inventario & POS*
+* Arquitectura SaaS para retail tecnológico con soporte web y móvil para escaneo rápido de stock.
+* **Integridad de Datos:** Bloqueo optimista (*Optimistic Locking*) para prevenir sobreventas concurrentes y auditoría contable inmutable de cada transacción.
+* **Stack:**
+  <br />
+  <img src="https://skillicons.dev/icons?i=java,spring,postgres,react&theme=dark" alt="Stack" />
+* **Destacado:** Aislamiento estricto multi-tenant · Migraciones versionadas en Flyway.
+
+---
+
+#### 🤖 3. AI BUSINESS AGENT
+*Pipeline RAG & Memoria Semántica Vectorial Asíncrona*
+* Agente inteligente para automatización y análisis contextual de documentos empresariales.
+* **Arquitectura RAG:** Búsqueda semántica por similitud de cosenos en **pgvector**, caché de sesiones de baja latencia con **Redis** y mitigación rigurosa de alucinaciones con modelos Claude.
+* **Stack:**
+  <br />
+  <img src="https://skillicons.dev/icons?i=py,fastapi,postgres,redis&theme=dark" alt="Stack" />
+* **Destacado:** Recuperación vectorial sub-100ms · Validación estricta con esquemas Pydantic.
+
+---
+
+#### 🖥️ 4. HOMELAB & INFRAESTRUCTURA SEGURA
+*Virtualización, Contenedores & Redes Malladas Cifradas*
+* Infraestructura self-hosted sobre **Proxmox VE** con segmentación entre Máquinas Virtuales y contenedores LXC orquestados en Docker.
+* **Seguridad de Red:** Acceso remoto cifrado punto a punto vía **WireGuard** y **Tailscale** (*Zero Open Ports* a internet pública) con proxy inverso Nginx SSL.
+* **Stack:**
+  <br />
+  <img src="https://skillicons.dev/icons?i=linux,docker,bash&theme=dark" alt="Stack" />
+* **Destacado:** Entornos reproducibles y aislados · Almacenamiento en nube privada.
 
 ---
 
@@ -394,10 +353,15 @@ SUBSISTEMA                 PROTOCOLO   ESTADO      LATENCIA (p99)   MEMORIA
 ### 📊 Métricas & Actividad en GitHub
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Danvb15&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0D1117&title_color=60A5FA&text_color=9CA3AF&icon_color=38BDF8" alt="GitHub Stats" />
-  <img src="https://streak-stats.demolab.com/?user=Danvb15&theme=tokyonight&hide_border=true&border_radius=12&background=0D1117&ring=60A5FA&fire=38BDF8&currStreakLabel=60A5FA" alt="Streak Stats" />
-  <br /><br />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Danvb15&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0D1117&title_color=60A5FA&text_color=9CA3AF" alt="Top Languages" />
+  <p align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=Danvb15&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0D1117&title_color=60A5FA&text_color=9CA3AF&icon_color=38BDF8" alt="GitHub Stats" width="100%" style="max-width: 460px;" />
+  </p>
+  <p align="center">
+    <img src="https://streak-stats.demolab.com/?user=Danvb15&theme=tokyonight&hide_border=true&border_radius=12&background=0D1117&ring=60A5FA&fire=38BDF8&currStreakLabel=60A5FA" alt="Streak Stats" width="100%" style="max-width: 460px;" />
+  </p>
+  <p align="center">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Danvb15&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0D1117&title_color=60A5FA&text_color=9CA3AF" alt="Top Languages" width="100%" style="max-width: 460px;" />
+  </p>
 </div>
 
 ---
@@ -405,11 +369,11 @@ SUBSISTEMA                 PROTOCOLO   ESTADO      LATENCIA (p99)   MEMORIA
 ### 🎧 Coding Vibe // Frecuencia de Enfoque
 
 ```bash
-╭─────────────────────────────────────────────────────────────╮
-│  ♫ NOW PLAYING: Synthwave & Dark Cyberpunk Melodic Beats     │
-│  [████████████████████████████░░░░░░░░] 03:14 / 04:45       │
-│  ⚡ Focus Mode: 100% · Status: Shipping Robust Code ☕      │
-╰─────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────╮
+│ ♫ NOW PLAYING: Synthwave Ambient Stream  │
+│ [████████████████░░░░░░░░] 03:14 / 04:45 │
+│ ⚡ Focus: 100% · Status: Shipping Code   │
+╰──────────────────────────────────────────╯
 ```
 
 ---
@@ -443,5 +407,5 @@ SUBSISTEMA                 PROTOCOLO   ESTADO      LATENCIA (p99)   MEMORIA
   <br /><br />
 
   <!-- Footer con Onda Inversa de Cierre Cinematográfico -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,70:1E293B,100:3B82F6&height=100&section=footer" width="100%" alt="Footer Wave" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,70:1E293B,100:3B82F6&height=80&section=footer" width="100%" alt="Footer Wave" />
 </div>
